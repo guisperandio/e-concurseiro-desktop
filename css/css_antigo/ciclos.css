@@ -1,0 +1,447 @@
+header .user-details {
+    width: 430px;
+    float: right;
+    /* position: absolute; */
+    padding: 6px 0;
+    height: 49px;
+    margin: 0 140px 0 0;
+}
+.box-menu-app .btn {
+    margin-bottom: 90px;
+}
+p.warning {
+    color: red;
+    font-weight: bold
+}
+p.normal {
+    color: #1e9ec5;
+    font-weight: bold
+}
+.box-interesse {
+    text-align: center
+}
+.box-interesse label {
+    width: 164px;
+    text-align: right;
+    display: inline-block;
+    color: #1a5ec6;
+    font-weight: bold;
+}
+.box-interesse .small {
+    width: 38px !important;
+    background-color: #eaeaea;
+    margin: 3px 0
+}
+.ciclos {
+    background-repeat: no-repeat;
+    background-position: top left;
+    min-height: 767px;
+    margin-bottom: 0;
+}
+h2.bigtitle {
+    margin-bottom: 20px;
+}
+h1.bluetitle {
+    text-transform: none;
+    font-size: 22px
+}
+.box-aula {
+    position: relative;
+}
+.box-aula i.sprite-aulas {
+    position: absolute;
+    right: -30px;
+}
+.box-aula i.sprite-excluir_blue {
+    position: absolute;
+    right: -50px;
+}
+.detail-left {
+    padding: 10px 160px 10px 23px;
+    background-color: #1e9ec5;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 7px;
+    z-index: 2;
+    position: relative;
+}
+.detail-right {
+    padding: 10px 30px 7px 45px;
+    margin-left: -10px;
+    background-color: #eaeaea;
+    z-index: 1;
+    font-weight: bold;
+    color: #1e9ec5;
+    font-size: 14px;
+}
+span.graytitle {
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #1e9ec5;
+    padding: 10px;
+    display: block;
+    float: left;
+}
+.box-interesse.overflow {
+    width: 100%;
+    max-height: 350px
+}
+.box-aula.full {
+    width: 89% !important
+}
+.block {
+    display: block;
+}
+.cadastro-materias .nome-materia {
+    width: 324px
+}
+.cadastro-materias .box-input input[type="text"] {
+    background-color: #fff;
+    border: 1px solid #eaeaea;
+}
+.questoes-input {
+    width: 55px;
+}
+.payment-method {
+    width: 90px
+}
+.table-professor {
+    margin-top: 0 !important;
+    width: 99% !important
+}
+tr.linha {
+    border-top: 3px solid #FFF;
+    border-bottom: 3px solid #FFF;
+    background-color: #efefef
+}
+tr.linha:hover {
+    background-color: #1e9ec5 !important;
+}
+tr.linha:hover td {
+    color: #fff
+}
+table.table-professor tr th, table.table-professor tr td {
+    padding: 5px;
+    vertical-align: middle
+}
+table label {
+    text-align: left !important;
+    margin-right: 10px;
+    width: inherit !important;
+    margin-left: 3px;
+    color: #696969 !important;
+    font-weight: normal
+}
+.bloco-title {
+    margin-top: 10px;
+    text-align: left;
+    padding: 6px 10px;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+.blocos-cadastrados .box-aula {
+    width: inherit !important;
+}
+.blocos-cadastrados .box-aula .bigtitle {
+    font-size: 12px !important;
+    margin-top: 4px;
+    text-transform: none
+}
+.blocos-cadastrados .box-aula i.sprite-excluir_blue, .blocos-cadastrados .box-aula i.sprite-aulas {
+    position: relative !important;
+    right: 0;
+}
+.blocos-cadastrados .box-aula.aula-child {
+    width: 80% !important;
+    float: right;
+}
+.bgr-graydark {
+    background-color: #ccc !important
+}
+.blocos-cadastrados .overflow {
+    max-height: 170px
+}
+.blocos-cadastrados .box-interesse .select-option {
+    width: inherit !important
+}
+.blocos-cadastrados .box-interesse .select-option label {
+    text-align: left;
+    width: 470px;
+    text-transform: uppercase;
+    color: #696969;
+    font-size: 11px
+}
+.quinto {
+    width: 20% !important
+}
+.terco {
+    width: 70%
+}
+.info-blocos p {
+    float: left;
+    width: 230px;
+    font-size: 13px;
+    line-height: 1.2;
+    color: #1e9ec5;
+    margin-right: 20px;
+    text-align: justify
+}
+.info-blocos input.small {
+    width: 50px;
+    border: 0;
+    background-color: #eaeaea;
+}
+.grid_15 {
+    width: 950px !important;
+}
+.transparent {
+    background-color: #fff !important;
+    position: relative
+}
+.ciclos table.table-professor tr {
+    height: inherit !important
+}
+.ciclos table.table-professor tr.rowspan td {
+    background-color: #1e9ec5;
+    color: #fff;
+    border-right: 4px solid #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    width: 150px
+}
+.definicao-materias.table-professor tr.linha td {
+    padding: 0px 5px !important
+}
+.transparent .ultratitle {
+    position: absolute;
+    top: -81px;
+    font-size: 61px;
+    color: #1e9ec5;
+    font-weight: bold;
+    left: 25px;
+    text-transform: none
+}
+.transparent .bluetitle {
+    position: absolute;
+    font-size: 10px;
+    top: -3px;
+}
+.definicao-materias {
+    margin-top: 90px !important
+}
+.box-alert {
+    width: 115px;
+    padding: 24px 20px;
+    background-color: #eaeaea;
+    margin-right: 20px;
+}
+.box-alert p {
+    font-size: 12px;
+    text-align: center;
+    margin: 20px 0 0 0;
+    color: #fff;
+    line-height: 1.4
+}
+.whitetitle {
+    text-transform: uppercase;
+    text-align: center;
+    display: block;
+    font-weight: bold;
+    color: #fff;
+}
+p.metas {
+    margin: 0;
+}
+p.metas b {
+    color: #1e9ec5
+}
+.box-stats ul#expand-list {
+    position: relative;
+    right: 190px;
+    top: 30px;
+}
+.box-stats .concurseiro-stats {
+    top: 51px;
+    right: -12px;
+}
+.box-stats .concurseiro-stats .bluetitle {
+    margin-top: 26px;
+}
+.box-dadm {
+    width: 75px;
+    margin-right: 10px;
+    min-height: 230px;
+}
+.squares td {
+    padding: 6px;
+    background-color: #eaeaea;
+    border: 2px solid black;
+    border-radius: 3px;
+    display: block;
+    float: left;
+    margin-right: 1px;
+    margin-bottom: 1px
+}
+.table-professor.background-white tr {
+    background-color: #fff !important
+}
+.table-professor.background-white tr.topo th {
+    color: #1e9ec5 !important;
+    font-weight: bold;
+}
+.grid_12.overflow {
+    width: 700px !important
+}
+.box-resumo {
+    width: 450px !important;
+}
+.box-resumo .detail-materia {
+    margin-bottom: 5px
+}
+.box-resumo .detail-left {
+    padding: 10px 123px 10px 23px
+}
+.modal-ciclo .ultratitle {
+    font-size: 30px;
+    text-transform: uppercase;
+    float: left;
+}
+.modal-ciclo p.modal-p {
+    display: block;
+    float: left;
+    text-align: left;
+    text-transform: uppercase;
+    font-size: 12px;
+    color: #1e9ec5;
+    font-weight: bold;
+    line-height: 1.1;
+    margin-left: 22px;
+}
+.cronometro {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+.cronometro p {
+    font-size: 11px
+}
+.box-expand {
+    white-space: normal
+}
+.box-expand .btn {
+    margin-bottom: 10px !important
+}
+.box-expand p {
+    padding: 10px;
+    font-size: 12px;
+}
+#professor.box-expand {
+    width: 260px;
+}
+#stats.box-expand, #material.box-expand {
+    border: 1px solid #efefef;
+    width: 222px
+}
+#stats.box-expand, #material.box-expand, #professor.box-expand {
+    top: 28px;
+    left: -6px;
+}
+#stats.box-expand:after, #material.box-expand:after, #professor.box-expand:after {
+    left: 6%
+}
+#material.box-expand .c100.small {
+    font-size: 54px;
+    width: 54px !important;
+}
+#material.box-expand .user-details h3 {
+    font-size: 13px;
+}
+#material.box-expand .user-details ul li {
+    width: 30px;
+}
+#material.box-expand .usr-alert {
+    position: absolute;
+    top: -1px;
+    right: -11px;
+    width: inherit;
+    height: inherit;
+    border-radius: 40px;
+    background-color: #1e9ec5;
+    color: #fff;
+    -webkit-box-shadow: 0 0 0 5px rgba(255, 255, 255, 1);
+    box-shadow: 0 0 0 5px rgba(255, 255, 255, 1);
+    z-index: 1000;
+    padding: 3px 4px 3px 4px;
+    font-weight: bold;
+}
+.overlay .box-feed {
+    position: absolute;
+    right: 0;
+    left: 0;
+    margin: 36px auto !important;
+}
+.sprite-stats_app {
+    width: 16px;
+    height: 16px;
+    background-position: -491px -13px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+.sprite-material_app {
+    width: 19px;
+    height: 16px;
+    background-position: -511px -13px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+.sprite-professor_app {
+    width: 20px;
+    height: 16px;
+    background-position: -532px -13px;
+    margin-bottom: 5px;
+}
+.box-squares{
+  width: 100%;
+}
+.box-squares table{
+  margin: 0 auto
+}
+.modal-inicio .box-feed{
+  width: 906px
+}
+.modal-inicio .box-feed .grid_7{
+  width: 575px;
+}
+.box-interesse input[type="text"].input-alterar{
+  width: 50px;
+  background-color: #efefef;
+  margin: 0;
+  padding: 5px 10px;
+  text-align: center
+}
+.modal-inicio .box-feed .grid_7 td{
+  color: #004570;
+  font-weight: bold;
+}
+.modal-inicio .box-feed .grid_4 p{
+  font-size: 15px;
+}
+.modal-inicio .box-feed .grid_4 .btn{
+  margin-bottom: 10px !important
+}
+
+.middletitle{
+  font-size: 26px;
+  color: #1e9ec5
+}
+.no-uppercase{
+  text-transform: none
+}
+.center{
+  float: none !important
+}

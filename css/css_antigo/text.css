@@ -1,0 +1,1662 @@
+/*
+  960 Grid System ~ Text CSS.
+  Learn more ~ http://960.gs/
+
+  Licensed under GPL and MIT.
+*/
+
+
+/* `Basic HTML
+----------------------------------------------------------------------------------------------------*/
+
+@font-face {
+    font-family: 'Muli';
+    /*a name to be used later*/
+    src: url('../fonts/Muli.ttf');
+    /*URL to font*/
+}
+@font-face {
+    font-family: 'Muli IE';
+    /*a name to be used later*/
+    src: url('../fonts/Muli.eot');
+    /*URL to font*/
+}
+
+body {
+    font: 13px/1.5 "Muli";
+    background-color: #fff;
+    outline: none;
+}
+pre, code {
+    font-family: "Muli", "Muli IE";
+}
+hr {
+    border: 0 solid #ccc;
+    border-top-width: 1px;
+    clear: both;
+    height: 0;
+}
+input, a, button, p, div, h1, h2, h3, h4, h5, span, textarea, select, option {
+    outline: none;
+    text-decoration: none;
+    font-family: "Muli", "Muli IE";
+}
+a:hover {
+    text-decoration: none;
+}
+
+/* `Headings
+----------------------------------------------------------------------------------------------------*/
+
+h1 {
+    font-size: 25px;
+}
+h2 {
+    font-size: 23px;
+}
+h3 {
+    font-size: 21px;
+}
+h4 {
+    font-size: 16px;
+}
+h5 {
+    font-size: 14px;
+}
+h6 {
+    font-size: 13px;
+}
+
+/* `Spacing
+----------------------------------------------------------------------------------------------------*/
+
+ol {
+    list-style: decimal;
+}
+ul {
+    list-style: none
+}
+p, dl, hr, h1, h2, h3, h4, h5, h6, ol, ul, pre, table, address, figure {
+    margin-bottom: 20px;
+    outline: none;
+}
+p, span {
+    color: #004570
+}
+a, label {
+    color: #696969;
+    text-decoration: none;
+}
+.bold {
+    font-weight: bold;
+    font-size: 15px
+}
+.link-destaque {
+    color: #509d12
+}
+
+/* `custom css
+----------------------------------------------------------------------------------------------------*/
+
+.logo {
+    display: block;
+    text-indent: -9999px;
+    width: 384px;
+    height: 89px;
+    background-image: url('../img/logo_concurseiro.jpg');
+    background-repeat: no-repeat;
+    margin-top: 10px
+}
+input {
+    padding: 10px;
+    color: #696969;
+    border: 1px solid #e5e5e5;
+    margin: 10px 0;
+}
+.input-email {
+    width: 355px;
+}
+.input-senha {
+    width: 182px
+}
+.btn {
+    padding: 10px;
+    background-color: rgba(200, 200, 200, 0.3);
+    border: 0;
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    float: left;
+    margin-right: 10px;
+    opacity: 1;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 14px;
+}
+.btn-block {
+    width: 100%
+}
+.btn-blue {
+    background-color: #219cc4 !important;
+}
+.btn-patblue {
+    background-color: #1a678f !important;
+}
+.btn-darkblue {
+    background-color: #3b5998 !important;
+}
+.btn-clear {
+    background-color: transparent;
+    color: #555
+}
+.btn-ok {
+    background-color: #74bb00 !important;
+}
+.btn-danger {
+    background-color: #b64645 !important;
+}
+.btn-alert {
+    background-color: #f8aa33 !important;
+}
+.btn-warning {
+    background-color: #fde200 !important;
+}
+.btn-orange {
+    background-color: #ff5a00 !important;
+}
+.btn-green {
+    background-color: #4da92c !important
+}
+.btn:hover {
+    opacity: 0.8;
+}
+.btn-pagina {
+    margin-top: 10px;
+    position: relative;
+}
+.btn-pagina .menu-alert {
+    top: 8px;
+    right: 8px;
+    background-color: #fff;
+    color: #4da92c;
+    padding: 2px 3px;
+}
+.login-details {
+    margin-bottom: 8px
+}
+.conectado {
+    color: #219cc4;
+    font-size: 11px;
+    display: block;
+    float: left;
+    margin-right: 30px;
+    height: 24px;
+    padding-top: 3px;
+    cursor: pointer;
+}
+.conectado.manter {
+    padding-left: 35px;
+    background-image: url("../img/manter_conectado.jpg");
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+}
+.conectado.manter.active {
+    background-position: 0px -27px;
+}
+.btn-entrar {
+    width: 150px;
+    text-transform: uppercase;
+}
+.btn-facebook {
+    width: 202px;
+}
+.btn-tour {
+    width: 200px;
+    font-size: 12px;
+}
+.wlc-concurseiro {
+    margin-top: 27px
+}
+.wlc-concurseiro h2 {
+    text-transform: uppercase;
+    color: #219cc4;
+}
+.site-info ul li {
+    margin: 0 11px;
+    display: block;
+    float: left;
+    width: 94px;
+    height: 60px;
+    background-image: url('../img/site-details.jpg');
+    background-repeat: no-repeat;
+    padding-top: 70px;
+    background-position: 12px 0px;
+    text-align: center
+}
+.site-info ul li .num-info {
+    font-size: 18px;
+    color: #219cc4;
+}
+.site-info ul li .data-info {
+    font-size: 11px;
+    color: #696969;
+    text-transform: uppercase;
+    line-height: 14px;
+    display: block;
+}
+.btn-facebook-cadastro {
+    margin-top: 26px;
+    margin-bottom: 10px
+}
+.cadastro {
+    display: block;
+    float: left;
+    width: 446px
+}
+.menu-cadastro {
+    margin: 0
+}
+.menu-cadastro ul li a.active {
+    background-color: #fff !important;
+}
+.menu-cadastro ul li {
+    display: block;
+}
+.menu-cadastro ul li a {
+    display: block;
+    float: left;
+    border-left: 1px solid #eaeaea;
+    border-top: 1px solid #eaeaea;
+    padding: 10px;
+    min-height: 49px;
+    background-image: url('../img/sprites.png');
+    background-position: 0px 0px;
+    background-repeat: no-repeat;
+}
+.menu-cadastro ul li:last-child a {
+    border-right: 1px solid #eaeaea
+}
+.no-cadastro a {
+    padding: 16px 10px 4px 58px !important;
+    background-position: 1px -377px !important;
+}
+.no-cadastro a.active {
+    background-position: 0px 8px !important;
+}
+.not-user {
+    font-size: 10px;
+    display: block;
+    float: left;
+    clear: both;
+}
+.destaque-cadastro {
+    display: block;
+    float: left;
+    font-size: 15px;
+    color: #696969;
+    clear: both;
+}
+.no-cadastro a.active .destaque-cadastro {
+    color: #1f91cb;
+}
+.professores a, .anunciantes a {
+    display: block;
+    text-transform: uppercase;
+    padding-top: 40px !important;
+    min-height: 0 !important;
+}
+.professores a {
+    background-position: 23px -69px !important;
+}
+.professores a.active {
+    background-position: 23px -312px !important;
+}
+ul.menu-cadastro li a {
+    background-color: #ededed;
+}
+.anunciantes a {
+    background-position: 23px -154px !important;
+}
+.anunciantes a.active {
+    background-position: 23px -238px !important;
+}
+.content-cadastro {
+    padding: 33px 10px;
+    border: 1px solid #eaeaea;
+    border-top: 0;
+}
+.acesso-gratuito {
+    display: block;
+    text-align: center;
+    margin-bottom: 25px
+}
+.acesso-professores {
+    display: block;
+    text-align: center;
+    margin: 0 auto 25px auto;
+    width: 390px;
+    color: #696969;
+    font-size: 15px;
+}
+.text-destaque {
+    color: #1e9ec5
+}
+.content-cadastro input[type="text"] {
+    width: 340px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.content-cadastro input.senha {
+    width: 143px;
+    margin: 0 0 10px 31px;
+    float: left;
+}
+.content-cadastro input.uf {
+    width: 30px;
+    margin: 0 0 10px 31px;
+    float: left;
+}
+.content-cadastro input.cidade {
+    width: 256px;
+    margin: 0 0 10px 31px;
+    float: left;
+}
+.content-cadastro input.nascimento {
+    width: 180px;
+    margin: 0 0 10px 31px;
+    float: left;
+}
+.option-group {
+    display: block;
+    float: left;
+    margin-left: 20px;
+    padding: 5px;
+    width: 130px;
+}
+.alert {
+    display: block;
+    width: 360px;
+    margin: 14px auto;
+    text-align: center;
+    color: #696969
+}
+.content-cadastro input[type="radio"] {
+    margin-left: 5px;
+}
+.btn-cadastras {
+    width: 365px;
+    margin: 0 auto;
+    float: none;
+    margin-top: 10px
+}
+.btn-oceanblue {
+    background-color: #004570
+}
+.btn-cleanblue {
+    background-color: #1a678f
+}
+footer {
+    margin-top: 30px;
+    text-align: center;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1001;
+    background-color: rgba(0, 0, 0, 0.7);
+    height: 100%;
+    min-height: 100%;
+    display: none;
+}
+.flex {
+    /* habilita o flex nos filhos diretos */
+    display: -ms-flex;
+    display: -webkit-flex;
+    display: flex !important;
+    /* centraliza na vertical */
+    -ms-align-items: center;
+    -webkit-align-items: center;
+    align-items: center;
+    /* centraliza na horizontal */
+    -ms-justify-content: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+}
+.lightbox {
+    width: 36%;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+    font-size: 22px;
+    padding: 30px;
+    background-color: #219cc5;
+    color: #fff;
+    position: relative;
+}
+.lightbox#cadastro-sucesso p {
+    color: #fff;
+    margin: 0
+}
+.lightbox .sprite-reprovar {
+    position: absolute;
+    top: 9px;
+    right: 7px;
+}
+.lightbox#cadastro-sucesso p b {
+    color: #ffe400;
+}
+.copyright {
+    padding: 15px;
+    background-color: #ededed;
+    color: #696969
+}
+.direitos {
+    color: #696969
+}
+.anunciantes-form input {
+    text-align: center;
+}
+#professores input {
+    text-align: center;
+}
+.icon-2 {
+    background-position: -108px 0px !important;
+}
+.icon-3 {
+    background-position: -216px 0px !important;
+}
+.icon-4 {
+    background-position: -323px 0px !important;
+}
+.icon-5 {
+    background-position: -417px 0px !important;
+}
+.icon-6 {
+    background-position: -506px 0px !important;
+}
+#anunciantes, #professores {
+    display: none
+}
+
+/* Icones */
+
+.sprite {
+    background-image: url('../img/spritesheet.png');
+    background-repeat: no-repeat;
+    display: block;
+    float: left;
+    cursor: pointer;
+}
+.sprite-anuncie {
+    width: 46px;
+    height: 41px;
+    background-position: -10px -10px;
+}
+.sprite-aplicativos {
+    width: 30px;
+    height: 25px;
+    background-position: -76px -10px;
+}
+.sprite-aprovar {
+    width: 26px;
+    height: 26px;
+    background-position: -126px -10px;
+}
+.sprite-aprove {
+    width: 30px;
+    height: 32px;
+    background-position: -172px -10px;
+}
+.sprite-biblioteca {
+    width: 28px;
+    height: 31px;
+    background-position: -222px -10px;
+}
+.sprite-boato {
+    width: 44px;
+    height: 37px;
+    background-position: -270px -10px;
+}
+.sprite-chat {
+    width: 28px;
+    height: 27px;
+    background-position: -334px -10px;
+}
+.sprite-comentar {
+    width: 33px;
+    height: 25px;
+    background-position: -76px -57px;
+}
+.sprite-cursos {
+    width: 37px;
+    height: 44px;
+    background-position: -129px -67px;
+}
+.sprite-denuncia {
+    width: 31px;
+    height: 28px;
+    background-position: -334px -57px;
+}
+.sprite-denuncia_choose {
+    width: 21px;
+    height: 19px;
+    background-position: -10px -105px;
+}
+.sprite-denuncie {
+    width: 29px;
+    height: 34px;
+    background-position: -51px -105px;
+}
+.sprite-descontrair {
+    width: 25px;
+    height: 23px;
+    background-position: -186px -105px;
+}
+.sprite-dicas {
+    width: 25px;
+    height: 26px;
+    background-position: -231px -105px;
+}
+.sprite-e-books {
+    width: 43px;
+    height: 41px;
+    background-position: -276px -105px;
+}
+.sprite-editais {
+    width: 25px;
+    height: 25px;
+    background-position: -339px -105px;
+}
+.sprite-editais_gd {
+    width: 37px;
+    height: 44px;
+    background-position: -10px -166px;
+}
+.sprite-editar {
+    width: 24px;
+    height: 24px;
+    background-position: -100px -150px;
+}
+.sprite-editar_blue {
+    width: 21px;
+    height: 20px;
+    background-position: -144px -150px;
+}
+.sprite-espada {
+    width: 24px;
+    height: 27px;
+    background-position: -185px -150px;
+}
+.sprite-excluir {
+    width: 18px;
+    height: 18px;
+    background-position: -339px -150px;
+}
+.sprite-excluir_blue {
+    width: 15px;
+    height: 17px;
+    background-position: -229px -188px;
+}
+.sprite-favorito {
+    width: 35px;
+    height: 32px;
+    background-position: -264px -166px;
+}
+.sprite-favorito_choose {
+    width: 28px;
+    height: 26px;
+    background-position: -319px -188px;
+}
+.sprite-favoritos {
+    width: 25px;
+    height: 22px;
+    background-position: -10px -234px;
+}
+.sprite-feed {
+    width: 25px;
+    height: 27px;
+    background-position: -55px -234px;
+}
+.sprite-image {
+    width: 24px;
+    height: 18px;
+    background-position: -102px -227px;
+    padding: 5px;
+    border-right: 1px solid #e5e5e5;
+    cursor: pointer;
+}
+.sprite-indicacao {
+    width: 49px;
+    height: 42px;
+    background-position: -153px -234px;
+}
+.sprite-indicacoes {
+    width: 25px;
+    height: 19px;
+    background-position: -222px -234px;
+}
+.sprite-info_boatos {
+    width: 25px;
+    height: 21px;
+    background-position: -267px -234px;
+}
+.sprite-interesses {
+    width: 25px;
+    height: 24px;
+    background-position: -312px -234px;
+}
+.sprite-logo-interna {
+    width: 197px;
+    height: 47px;
+    background-position: -10px -296px;
+}
+.sprite-lupa {
+    background-position: -103px -277px;
+}
+.sprite-mapa {
+    width: 39px;
+    height: 46px;
+    background-position: -280px -278px;
+}
+.sprite-mapas {
+    width: 25px;
+    height: 24px;
+    background-position: -339px -278px;
+}
+.sprite-medalha {
+    width: 32px;
+    height: 40px;
+    background-position: -385px -10px;
+}
+.sprite-minha_rede {
+    width: 25px;
+    height: 26px;
+    background-position: -385px -70px;
+}
+.sprite-motivacao {
+    width: 25px;
+    height: 28px;
+    background-position: -384px -116px;
+}
+.sprite-papo {
+    width: 42px;
+    height: 43px;
+    background-position: -377px -164px;
+}
+.sprite-papo1 {
+    width: 54px;
+    height: 54px;
+    background-position: -339px -322px;
+}
+.sprite-pdf {
+    width: 41px;
+    height: 44px;
+    background-position: -437px -10px;
+}
+.edital .sprite-pdf {
+    width: 115px;
+    position: relative;
+    top: 60px;
+    padding: 9px 9px 9px 40px;
+    font-weight: bold;
+    font-size: 16px;
+    color: #16678e;
+}
+.sprite-perfil {
+    width: 26px;
+    height: 27px;
+    background-position: -430px -74px;
+}
+.sprite-plus {
+    width: 33px;
+    height: 27px;
+    background-position: -439px -121px;
+}
+.sprite-power {
+    width: 23px;
+    height: 27px;
+    background-position: -439px -168px;
+}
+.sprite-professore {
+    width: 77px;
+    height: 32px;
+    background-position: -384px -227px;
+}
+.sprite-provas {
+    width: 25px;
+    height: 25px;
+    background-position: -413px -279px;
+}
+.sprite-reprovar {
+    width: 26px;
+    height: 26px;
+    background-position: -413px -324px;
+}
+.sprite-seta {
+    width: 21px;
+    height: 18px;
+    background-position: -458px -279px;
+}
+.sprite-share {
+    width: 23px;
+    height: 24px;
+    background-position: -459px -317px;
+}
+.sprite-sino {
+    width: 19px;
+    height: 25px;
+    background-position: -227px -361px;
+}
+.sprite-sucesso {
+    width: 25px;
+    height: 19px;
+    background-position: -10px -370px;
+}
+.sprite-wifi {
+    width: 24px;
+    height: 23px;
+    background-position: -266px -361px;
+}
+.sprite2 {
+    background-image: url('../img/spritesheet_2.png');
+}
+.sprite-aluna_gd {
+    width: 27px;
+    height: 29px;
+    background-position: -25px -25px;
+}
+.sprite-aluna_pq {
+    width: 19px;
+    height: 22px;
+    background-position: -102px -25px;
+}
+.sprite-aluno_gd {
+    width: 27px;
+    height: 29px;
+    background-position: -171px -25px;
+}
+.sprite-aluno_pq {
+    width: 22px;
+    height: 21px;
+    background-position: -248px -25px;
+}
+.sprite-banco_gd {
+    width: 37px;
+    height: 37px;
+    background-position: -320px -25px;
+}
+.sprite-banco_pq {
+    width: 21px;
+    height: 23px;
+    background-position: -407px -25px;
+}
+.sprite-ciclos {
+    width: 37px;
+    height: 34px;
+    background-position: -407px -98px;
+}
+.sprite-close_blue {
+    width: 31px;
+    height: 30px;
+    background-position: -25px -182px;
+}
+.sprite-close_gray {
+    width: 14px;
+    height: 14px;
+    background-position: -102px -98px;
+}
+.sprite-cong_gd {
+    width: 38px;
+    height: 28px;
+    background-position: -106px -182px;
+}
+.sprite-cong_pq {
+    width: 24px;
+    height: 16px;
+    background-position: -194px -182px;
+}
+.sprite-desafio {
+    width: 34px;
+    height: 34px;
+    background-position: -268px -182px;
+}
+.sprite-fed_gd {
+    width: 38px;
+    height: 36px;
+    background-position: -352px -182px;
+}
+.sprite-fed_pq {
+    width: 27px;
+    height: 27px;
+    background-position: -440px -182px;
+}
+.sprite-juiz_gd {
+    width: 36px;
+    height: 36px;
+    background-position: -440px -259px;
+}
+.sprite-juiz_pq {
+    width: 26px;
+    height: 24px;
+    background-position: -25px -345px;
+}
+.sprite-just_gd {
+    width: 37px;
+    height: 35px;
+    background-position: -101px -345px;
+}
+.sprite-just_pq {
+    width: 28px;
+    height: 23px;
+    background-position: -188px -345px;
+}
+.sprite-logo_nome {
+    width: 61px;
+    height: 57px;
+    background-position: -266px -345px;
+}
+.sprite-msg {
+    width: 20px;
+    height: 14px;
+    background-position: -248px -98px;
+}
+.sprite-nada_gd {
+    width: 18px;
+    height: 32px;
+    background-position: -377px -345px;
+}
+.sprite-nada_pq {
+    width: 19px;
+    height: 26px;
+    background-position: -194px -259px;
+}
+.sprite-oab_gd {
+    width: 41px;
+    height: 18px;
+    background-position: -377px -427px;
+}
+.sprite-oab_pq {
+    width: 31px;
+    height: 13px;
+    background-position: -445px -345px;
+}
+.sprite-pesq1_gd {
+    width: 29px;
+    height: 37px;
+    background-position: -494px -25px;
+}
+.sprite-pesq1_pq {
+    width: 19px;
+    height: 24px;
+    background-position: -517px -112px;
+}
+.sprite-pesq_gd {
+    width: 35px;
+    height: 32px;
+    background-position: -526px -186px;
+}
+.sprite-pesq_pq {
+    width: 22px;
+    height: 22px;
+    background-position: -25px -268px;
+}
+.sprite-pol_gd {
+    width: 32px;
+    height: 36px;
+    background-position: -526px -268px;
+}
+.sprite-pol_pq {
+    width: 25px;
+    height: 28px;
+    background-position: -526px -354px;
+}
+.sprite-prof_gd {
+    width: 26px;
+    height: 29px;
+    background-position: -25px -432px;
+}
+.sprite-prof_pq {
+    width: 18px;
+    height: 20px;
+    background-position: -25px -112px;
+}
+.sprite-profa_gd {
+    width: 26px;
+    height: 29px;
+    background-position: -101px -432px;
+}
+.sprite-profa_pq {
+    width: 18px;
+    height: 21px;
+    background-position: -97px -268px;
+}
+.sprite-publicacao {
+    width: 18px;
+    height: 18px;
+    background-position: -166px -112px;
+}
+.sprite-questao {
+    width: 37px;
+    height: 35px;
+    background-position: -177px -432px;
+}
+.sprite-sau_pq {
+    width: 26px;
+    height: 25px;
+    background-position: -263px -268px;
+}
+.sprite-saud_gd {
+    width: 37px;
+    height: 34px;
+    background-position: -468px -432px;
+}
+.sprite-shared_blue {
+    width: 18px;
+    height: 16px;
+    background-position: -318px -112px;
+}
+.sprite-tik_blue {
+    width: 18px;
+    height: 15px;
+    background-position: -339px -268px;
+}
+.sprite-tik_gray {
+    width: 18px;
+    height: 16px;
+    background-position: -25px -516px;
+}
+.sprite-video {
+    width: 16px;
+    height: 14px;
+    background-position: -93px -516px;
+}
+.sprite-video-39 {
+    width: 40px;
+    height: 38px;
+    background-position: -264px -516px;
+    margin-right: 10px
+}
+.sprite3 {
+    background-image: url('../img/spritesheet_3.png');
+}
+.sprite-accepted_blue {
+    width: 22px;
+    height: 21px;
+    background-position: -25px -25px;
+}
+.sprite-chat_blue {
+    width: 25px;
+    height: 20px;
+    background-position: -97px -25px;
+}
+.sprite-close_blue2 {
+    width: 21px;
+    height: 21px;
+    background-position: -97px -95px;
+}
+.sprite-compartilhar_blue {
+    width: 18px;
+    height: 18px;
+    background-position: -172px -25px;
+}
+.sprite-open_white {
+    width: 22px;
+    height: 15px;
+    background-position: -172px -93px;
+}
+.sprite-mail {
+    width: 30px;
+    height: 20px;
+    background-position: -168px -143px;
+}
+.sprite-happy {
+    width: 43px;
+    height: 44px;
+    background-position: -13px -80px;
+}
+.sprite-dicas_gd {
+    width: 35px;
+    height: 47px;
+    background-position: -16px -148px;
+}
+.sprite-procurar {
+    width: 35px;
+    height: 47px;
+    background-position: -92px -148px;
+}
+.sprite-historias_gd {
+    width: 45px;
+    height: 37px;
+    background-position: -160px -203px;
+}
+.sprite-maps {
+    width: 45px;
+    height: 37px;
+    background-position: -87px -203px;
+}
+.sprite-arraste {
+    width: 191px;
+    height: 129px;
+    background-position: -232px -25px;
+}
+.sprite-adicionar {
+    width: 39px;
+    height: 45px;
+    background-position: -324px -200px;
+}
+.sprite-perfil-completo {
+    width: 41px;
+    height: 43px;
+    background-position: -390px -200px;
+}
+.sprite-msg-grande {
+    width: 45px;
+    height: 30px;
+    background-position: -388px -258px;
+}
+.sprite-amigos-comum {
+    width: 46px;
+    height: 46px;
+    background-position: -321px -251px;
+}
+.sprite-pag-professor {
+    width: 33px;
+    height: 45px;
+    background-position: -262px -258px;
+}
+.sprite-medal {
+    width: 33px;
+    height: 50px;
+    background-position: -204px -254px;
+}
+.sprite-adicionar-amigo {
+    width: 28px;
+    height: 31px;
+    background-position: -161px -257px;
+}
+.sprite-time {
+    width: 24px;
+    height: 22px;
+    background-position: -123px -257px;
+}
+.sprite-cao {
+    width: 111px;
+    height: 87px;
+    background-position: -324px -310px;
+}
+.sprite-mental1 {
+    width: 56px;
+    height: 86px;
+    background-position: -258px -314px;
+}
+.sprite-mental2 {
+    width: 36px;
+    height: 86px;
+    background-position: -204px -314px;
+}
+.sprite-motivacao_gd {
+    width: 40px;
+    height: 46px;
+    background-position: -243px -198px;
+}
+.sprite-mental_medal1 {
+    width: 136px;
+    height: 125px;
+    background-position: -58px -312px;
+}
+.sprite-mental_medal2 {
+    width: 121px;
+    height: 122px;
+    background-position: -56px -451px;
+}
+.sprite-mental_medal3 {
+    width: 121px;
+    height: 122px;
+    background-position: -190px -451px;
+}
+.sprite-perseveranca1 {
+    width: 57px;
+    height: 90px;
+    background-position: -440px -312px;
+}
+.sprite-perseveranca2 {
+    width: 57px;
+    height: 93px;
+    background-position: -497px -312px;
+}
+.sprite-perseveranca_medal1 {
+    width: 119px;
+    height: 125px;
+    background-position: -330px -443px;
+}
+.sprite-perseveranca_medal2 {
+    width: 116px;
+    height: 116px;
+    background-position: -446px -16px;
+    margin-top: 8px !important;
+}
+.sprite-perseveranca_medal3 {
+    width: 114px;
+    height: 138px;
+    background-position: -452px -139px;
+    margin-top: -14px !important;
+}
+.sprite-emocional1 {
+    width: 53px;
+    height: 77px;
+    background-position: -462px -444px;
+}
+.sprite-emocional2 {
+    width: 66px;
+    height: 54px;
+    background-position: -462px -522px;
+    position: relative;
+    top: -31px;
+}
+.sprite-emocional_medal1 {
+    width: 118px;
+    height: 117px;
+    background-position: -574px -16px;
+}
+.sprite-emocional_medal2 {
+    width: 118px;
+    height: 117px;
+    background-position: -574px -159px;
+}
+.sprite-emocional_medal3 {
+    width: 116px;
+    height: 116px;
+    background-position: -574px -290px;
+}
+.sprite-select {
+    width: 35px;
+    height: 33px;
+    background-position: -448px -372px;
+}
+.sprite-select.active {
+    width: 35px;
+    height: 33px;
+    background-position: -407px -372px;
+}
+.sprite-social1 {
+    width: 142px;
+    height: 89px;
+    background-position: -547px -422px;
+}
+.sprite-social2 {
+    width: 132px;
+    height: 101px;
+    background-position: -547px -524px;
+}
+.sprite-social_medal1 {
+    width: 117px;
+    height: 116px;
+    background-position: -56px -594px;
+}
+.sprite-social_medal2 {
+    width: 117px;
+    height: 116px;
+    background-position: -186px -595px;
+}
+.sprite-social_medal3 {
+    width: 118px;
+    height: 137px;
+    background-position: -319px -574px;
+}
+.sprite-social_medal4 {
+    width: 118px;
+    height: 118px;
+    background-position: -58px -730px;
+}
+.sprite-social_medal5 {
+    width: 113px;
+    height: 113px;
+    background-position: -457px -629px;
+}
+.sprite-social_medal6 {
+    width: 113px;
+    height: 113px;
+    background-position: -581px -629px;
+}
+.sprite-follow {
+    width: 23px;
+    height: 24px;
+    background-position: -336px -522px;
+    margin-right: 9px;
+}
+.sprite-msg-pq {
+    width: 23px;
+    height: 16px;
+    background-position: -413px -524px;
+    margin-right: 9px;
+    position: relative;
+    top: 4px;
+}
+.sprite-eventos {
+    width: 19px;
+    height: 17px;
+    background-position: -377px -524px;
+    margin-right: 9px;
+    position: relative;
+    top: 4px;
+}
+.sprite-materias {
+    width: 23px;
+    height: 27px;
+    background-position: -454px -516px;
+}
+.sprite-avaliacao {
+    width: 32px;
+    height: 27px;
+    background-position: -490px -517px;
+}
+.sprite-sobre {
+    width: 24px;
+    height: 27px;
+    background-position: -531px -517px;
+}
+.sprite-novo_curso {
+    width: 40px;
+    height: 42px;
+    background-position: -209px -510px;
+    margin-right: 9px;
+}
+.sprite-btn_cursos {
+    width: 49px;
+    height: 44px;
+    background-position: -146px -512px;
+}
+.sprite-financeiro {
+    width: 14px;
+    height: 24px;
+    background-position: -338px -483px;
+    margin-right: 9px;
+}
+.sprite-select_option {
+    width: 21px;
+    height: 18px;
+    background-position: -9px -61px;
+}
+.sprite-plus_pq {
+    width: 19px;
+    height: 20px;
+    background-position: -447px -418px;
+    margin-left: 5px;
+    margin-top: 4px
+}
+.sprite-video_pq {
+    width: 17px;
+    height: 14px;
+    background-position: -411px -414px;
+    padding: 8px;
+    border-right: 1px solid #e5e5e5;
+    cursor: pointer;
+}
+.sprite-img_pq {
+    width: 16px;
+    height: 17px;
+    background-position: -359px -412px;
+    padding: 8px;
+    border-right: 1px solid #e5e5e5;
+    cursor: pointer;
+}
+.sprite-file {
+    width: 16px;
+    height: 17px;
+    background-position: -386px -415px;
+    padding: 8px;
+    border-right: 1px solid #e5e5e5;
+    cursor: pointer;
+}
+.sprite-youtube {
+    width: 19px;
+    height: 15px;
+    background-position: -367px -445px;
+    position: absolute;
+    left: 82px;
+    top: 5px;
+}
+.sprite-youtube:hover {
+    width: 19px;
+    height: 15px;
+    background-position: -367px -467px;
+}
+.sprite-home {
+    width: 27px;
+    height: 26px;
+    background-position: -393px -447px;
+}
+.sprite-details {
+    width: 30px;
+    height: 32px;
+    background-position: -320px -411px;
+}
+.sprite-youtube_red {
+    width: 33px;
+    height: 23px;
+    background-position: -275px -415px;
+}
+.sprite-pdf_pq {
+    width: 25px;
+    height: 27px;
+    background-position: -236px -412px;
+}
+.sprite-config {
+    width: 24px;
+    height: 23px;
+    background-position: -549px -24px;
+}
+.bad .sprite-arrow {
+    width: 17px;
+    height: 19px;
+    background-position: -624px -24px;
+}
+.good .sprite-arrow {
+    width: 17px;
+    height: 19px;
+    background-position: -649px -24px;
+}
+.sprite-editar {
+    width: 30px;
+    height: 24px;
+    background-position: -587px -24px;
+}
+.sprite-aulas {
+    width: 21px;
+    height: 24px;
+    background-position: -550px -68px;
+}
+.sprite-msg_blue {
+    width: 26px;
+    height: 22px;
+    background-position: -586px -68px;
+}
+.sprite-alert_blue {
+    width: 21px;
+    height: 19px;
+    background-position: -624px -68px;
+}
+.sprite-baixar_aula {
+    width: 74px;
+    height: 26px;
+    background-position: -549px -111px;
+}
+.sprite-excluir_aula {
+    width: 91px;
+    height: 27px;
+    background-position: -579px -155px;
+}
+.sprite-ver_videos {
+    width: 91px;
+    height: 27px;
+    background-position: -580px -196px;
+}
+.sprite-editar_videos {
+    width: 97px;
+    height: 37px;
+    background-position: -580px -233px;
+}
+.sprite-forum {
+    width: 63px;
+    height: 20px;
+    background-position: -579px -278px;
+}
+.sprite-download {
+    width: 18px;
+    height: 23px;
+    background-position: -578px -312px;
+}
+.sprite-download_del {
+    width: 29px;
+    height: 33px;
+    background-position: -578px -347px;
+}
+.sprite-play {
+    width: 27px;
+    height: 19px;
+    background-position: -613px -312px;
+}
+.sprite-play_edit {
+    width: 37px;
+    height: 30px;
+    background-position: -651px -312px;
+}
+.sprite-forum_blue {
+    width: 12px;
+    height: 19px;
+    background-position: -616px -349px;
+}
+.sprite-video_edit {
+    width: 24px;
+    height: 23px;
+    background-position: -234px -450px;
+}
+.sprite-video_del {
+    width: 23px;
+    height: 25px;
+    background-position: -273px -450px;
+    margin-left: 5px;
+}
+.sprite-resposta {
+    width: 37px;
+    height: 49px;
+    background-position: -190px -426px;
+}
+.sprite-relatorio{
+  width: 136px;
+    height: 27px;
+    background-position: -9px -458px;
+    margin-right: 15px;
+}
+.sprite-demonstrativo{
+    width: 182px;
+    height: 29px;
+    background-position: -9px -497px;
+}
+.sprite-perfil_white {
+    width: 21px;
+    height: 30px;
+    background-position: -21px -67px;
+}
+.sprite-circle{
+  width: 28px;
+height: 30px;
+background-position: -50px -67px;
+}
+.sprite-medalha_white{
+  width: 28px;
+  height: 34px;
+  background-position: -89px -67px;
+}
+.sprite-resolucao{
+  width: 348px;
+height: 54px;
+background-position: -15px -6px;
+}
+.sprite4{
+  background-image: url('../img/spritesheet_4.png');
+}
+.sprite-pdf_app{
+  width: 25px;
+    height: 28px;
+    background-position: -20px -114px;
+}
+.sprite-link_app{
+  width: 25px;
+height: 28px;
+background-position: -52px -114px;
+}
+.sprite-play_app{
+  width: 34px;
+height: 31px;
+background-position: -100px -112px;
+}
+.sprite-stop_app{
+  width: 34px;
+    height: 31px;
+    background-position: -133px -112px;
+}
+.sprite-relogio_app{
+  width: 50px;
+height: 50px;
+background-position: -173px -101px;
+
+}
+.sprite-star_app{
+  width: 29px;
+height: 28px;
+background-position: -233px -114px;
+}
+.sprite-chart_app{
+  width: 29px;
+height: 28px;
+background-position: -270px -114px;
+}
+.sprite-correto_app{
+  width: 157px;
+height: 40px;
+background-position: -20px -153px;
+}
+.sprite-erro_app{
+  width: 202px;
+    height: 40px;
+    background-position: -196px -153px;
+}
+.sprite-anterior_app{
+  width: 27px;
+    height: 38px;
+    background-position: -406px -155px;
+}
+.sprite-proxima_app{
+  width: 27px;
+    height: 38px;
+    background-position: -433px -155px;
+}
+.sprite-anwser_right_app{
+  width: 72px;
+  height: 23px;
+  background-position: -20px -279px;
+}
+
+.sprite-anwser_wrong_app{
+  width: 80px;
+height: 23px;
+background-position: -20px -309px;
+}
+.sprite-estatistica_app{
+  width: 95px;
+    height: 23px;
+    background-position: -20px -397px;
+
+}
+.sprite-favoritos_app{
+  width: 161px;
+    height: 27px;
+    background-position: -16px -428px;
+}
+.sprite-primeiro_app{
+  width: 52px;
+height: 27px;
+background-position: -19px -462px;
+}
+
+.bgr-lightblue {
+    background-color: #daf2ff !important
+}
+.no-padding {
+    padding: 0 !important;
+}
+#published-avancado .sprite-close_blue {
+    position: relative;
+    top: -38px;
+    right: -21px;
+}
+.relative{
+  position: relative !important;
+}
+.sprite-radio_button{
+  width: 22px;
+height: 23px;
+background-position: -20px -279px;
+}
+
+.payment-method {
+    box-sizing: border-box;
+    float: left;
+    height: 30px;
+    position: relative;
+    width: 100%;
+}
+.payment-method label {
+    background-color: #fff;
+    bottom: 1px;
+    cursor: pointer;
+    display: block;
+    font-size: 12px;
+    left: 1px;
+    position: absolute;
+    right: 1px;
+    top: 1px;
+}
+.payment-method label i{
+  margin-left: 5px;
+}
+.certo label {
+    width: 72px;
+    height: 23px;
+    background-position: -20px -279px;
+}
+.errado label {
+    width: 80px;
+    height: 23px;
+    background-position: -20px -309px;
+}
+.payment-methods .certo input:focus + label i {
+    background-position: -20px -338px
+}
+.payment-methods .certo input:checked+label i {
+    background-position: -20px -338px;
+    font-weight: bold;
+}
+.payment-methods .errado input:focus+label i{
+    background-position: -20px -368px
+}
+.payment-methods .errado input:checked+label i{
+    background-position: -20px -368px;
+}
+.payment-methods .errado input:checked+label{
+  font-weight: bold;
+}
+.block{
+  display: block;
+}
+.left{
+  float: left;
+}
+.sexo li{
+  width: 40px
+}
+.sexo > span{
+  margin-right: 10px
+}
+.sprite-tutorial{
+  width: 40px;
+height: 40px;
+background-position: -265px -515px;
+}
+.bgr-newyellow{
+  background-color: #ddae18 !important
+}
+.no-margin-left{
+  margin-left: 0 !important
+}
+.no-margin-right{
+  margin-right:  0 !important
+}
+.right{
+  float: right !important
+}

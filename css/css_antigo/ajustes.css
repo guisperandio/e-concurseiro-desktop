@@ -1,0 +1,67 @@
+#wrapper-interna #content-left{
+  width: 252px !important;
+  margin-left: 0 !important
+}
+#wrapper-interna #content-middle{
+  width: 590px !important
+}
+#wrapper-interna #content-right{
+  width: 294px !important;
+  margin-right: 0 !important
+}
+#perfil .usr-alert, #mensagem .usr-alert{
+  left: 40px !important;
+font-size: 11px !important;
+width: 15px !important;
+height: 15px !important;
+padding: 2px 3px 5px 3px !important;
+text-align: center !important;
+}
+#perfil .menu-name, #mensagem .menu-name{
+  margin-top: 10px !important
+}
+
+.publicacao h4{
+  font-size: 14px;
+}
+
+.btn-gray{
+  color: #696969
+}
+
+.expand:hover{
+  text-decoration: underline;
+}
+.box-denuncia .denuncia{
+  font-size: 11px !important
+}
+
+.artigo .box-title{
+  width: 296px;
+}
+
+.artigo .box-title .title-publicacao{
+  margin-left: -9px !important
+}
+
+#published-avancado label select{
+  padding: 9px
+}
+
+#content-right .btn-ok{
+  padding: 1px
+}
+.papo #content-left{
+  margin-left: 10px !important
+}
+.papo #content-middle{
+  margin: 0
+}
+.overlay .box-feed{
+  margin: 23px auto !important;
+  display: block;
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 30px;
+}

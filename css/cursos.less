@@ -1,0 +1,549 @@
+.loadFont(@Weight; @Name; @Local;  @Ttf:'../fonts/@{Local}.ttf';){
+    font-family: 'Muli';
+    font-style: normal;
+    font-weight: @Weight;
+    src: url(@Ttf);
+
+}
+@font-face {.loadFont(100;'Muli ExtraLight';'Muli-ExtraLight')}
+@font-face {.loadFont(300;'Muli Light';'Muli-Light')}
+@font-face {.loadFont(400;'Muli';'Muli')}
+@font-face {.loadFont(500;'Muli SemiBold';'Muli-SemiBold')}
+@font-face {.loadFont(700;'Muli Bold';'Muli-Bold')}
+
+.font(@weight:400; @size:14px; @font-family:'Muli'){
+    font:@arguments;
+}
+/* Visão Aluno 1 */
+.visaoAluno .sprite-select    {position: relative; left: 210px;}
+.visaoAluno .search           { margin-left: 263px; }
+.visaoAluno .overlay .box-feed {  padding: 20px 40px 20px 40px;  width: 52%;}
+.conteudoPop    { text-align: center; margin-top:50px }
+.conteudoPop .mensagem p{font-size: 18px !important; color:#666 !important;}
+.conteudoPop .titulo   {color:#1a678f; font-size:18px}
+
+.avatarAluno {background:url(../img/avatar.png) no-repeat; height:121px; }
+.avatarConteudo  {margin-left:122px; padding-top:13px; font-size:14px; color:#fff; font-weight:500;}
+.avatarNome      {margin-bottom:10px; font-family:'Muli';}
+
+
+/* Visão Aluno 2 */
+.visaoAluno2 .menu-topo { float: right; }
+.visaoAluno2 .yellowSpan { color: #ff0; font-weight: bold;}
+.visaoAluno2 .btn-text   { padding: 6px 11px 0px 45px; font-size: 18px}
+.visaoAluno2 .meusCursos { margin-bottom: 10px !important; background:#004570; padding:0px 30px 0px 30px; margin:4px 0px 0px 15px; font-size:20px; height:50px}
+.bts        {margin-left:-40px}
+.visaoAluno2 .acesso     { margin-left: -11px !important; margin-top: -10px; padding-right: 35px; font-size: 17px}
+.visaoAluno2 .btn        { border-radius: 0px !important}
+.visaoAluno2 .col-md-3   { width: 23%;}
+.visaoAluno2 .publicacao {
+    position: relative;
+    top: 103px;
+    left: 219px;
+}
+.linha  {border-bottom:1px solid #dadada;height: 30px; margin:0 auto !important;  display: block !important; text-align: center !important; float: inherit !important; clear: both;}
+.exibirCursos  h1 { font-size: 18px; text-transform: uppercase; color: #1e9ec5; font-weight: 600;}
+.exibirCursos ul  { margin-left: -11px !important; padding-left: 0px !important;}
+.exibirCursos ul li { padding: 0px 0px 0px 10px; text-transform: uppercase; font-size: 20px; color: #002f4c; text-align: center; }
+.exibirCursos a     {color: #004570; font-weight: 600}
+.exibirCursos a:hover { text-decoration: none; color:#002f4c }
+
+.linkProfessores    { margin-top: 30px; padding: 5px 0px 5px 0px; border:1px solid #1e9ec5; background: #fff; text-transform: uppercase; font-size: 20px; font-weight: bold; float:right !important  }
+.linkProfessores a  { color: #1e9ec5; width: 50px !important; display: inline-block !important; text-align: right; margin-left: 15px; padding-top: 5px}
+.linkProfessores a:hover    {text-decoration: none;}
+
+.concursosDestaque        { margin-top:35px;}
+.concursosDestaque h1     {color: #1e9ec5; font-size: 16px; font-weight: bold;}
+.tituloConcursosDestaque  {text-align: center; font-size: 20px; color: #4ca92b; font-weight: bold; margin-top: 70px}
+.concursosDestaque ul     { margin-left: -11px !important; padding-left: 0px !important;}
+.concursosDestaque ul li  { padding: 0px 0px 0px 10px; text-transform: uppercase; font-size: 20px; color: #002f4c; text-align: center; }
+.concursosDestaque a      {color: #004570; font-weight: 600; font-size: 16px}
+.concursosDestaque a:hover { text-decoration: none; color:#000; }
+
+.busca                    { margin-left: -85px; margin-top: 43px; float: right}
+.busca input              { width: 217px; position: relative; left: 15px;}
+.busca  .sprite-lupa      { background-position: -48px -274px;}
+
+.listaCursos              { top: 40px !important; position: relative; }
+.listaCursos .col-md-6    { width: 47%}
+.listaCursos .curso       { border:1px solid #dadada; background: #fff; padding: 15px 58px 15px 0px; margin-bottom: 60px; color:#004570; font-size: 15px; font-weight: bold; text-align: center; }
+.qtdCursos                { background: #1e9ec5; border-radius: 150px; height: 80px; color:#fff;width: 80px; position: absolute; margin-top: -50px; left: 500px; padding-top: 20px; font-size: 14px}
+.qtdCursos .numero        { font-size: 25px; line-height: 15px; font-weight: bold; color:#fff}
+.listaCursos .coluna2     { margin-left: 50px}
+.espaco                   { height: 400px; display: block; clear: both;}
+
+.listaCursos2              { top: 40px !important; position: relative; }
+.listaCursos2 .curso       { border:1px solid #dadada; background: #fff; padding: 15px; margin-bottom: 60px; color:#004570; font-size: 15px; font-weight: bold; text-align: left; }
+.listaCursos2 .prof        {  font-size: 15px; padding-top: 5px; color:#1e9ec5 }
+.listaCursos2 .detalhes    { float: right; position: relative; top:-35px; font-size: 18px; color:#1e9ec5; float: right;}
+.listaCursos2 .maisDetalhes { float: right; position: relative; top:-30px; font-size: 12px;  text-transform: uppercase; color:#1e9ec5; float: right}
+.sprite-add                 { position: relative;
+    top: -7px;
+    width: 32px;
+    height: 32px;
+    background-position: -318px -411px;
+    margin-left: 20px;
+    margin-right: 5px;}
+
+.alignCenter                { text-align: center !important; }
+
+.tituloDetalhesCurso        {text-align: left; font-size: 20px; color: #4ca92b; font-weight: bold; margin-top: 30px}
+.detalhesCurso              { text-align: center; height: 770px}
+.detalhesCurso .curso       { margin-bottom: 60px; margin-top: 45px;  color: #004570;  font-size: 15px;  font-weight: bold;  }
+.detalhesCurso .prof        { font-size: 15px; padding-top: 0px; color: #1e9ec5;}
+.detalhesCurso h1           {font-size: 18px; text-align: left; color: #1e9ec5}
+.detalhesCurso .detalhamentoDescricao      {text-align: justify; color: #696969 !important}
+.detalhesCurso .detalhes    { position: relative; top:-35px; font-size: 18px; color:#1e9ec5;   font-weight: bold; text-align: center; margin-bottom:0px }
+.detalhesCurso .btComprar button  { background: #4ca92b; padding: 0px 12px 4px 11px; font-size: 20px; margin-top: -35px !important; margin-bottom: -30px;  height: 40px; clear: both;border:none; width: 100%; color: #fff}
+.detalhesCurso .btComprar button:hover  { background: #53b92f}
+.detalhesCurso .btAzul   button     {position:relative;background: #004570; padding: 2px 1px 4px 35px; font-size: 20px; font-weight: bold; font-size: 12px; top: -15px !important;  height: 40px; clear: both;border:none; width: 100%; color: #fff}
+.detalhesCurso .btAzul   button:hover { background: #045587}
+.detalhesCurso .sprite-youtube2      {position: relative; z-index: 1;  top: 28px; width: 32px; height: 38px; background-position: -275px -441px; margin-left:5px; margin-right: 5px;}
+.detalhesCurso .sprite-youtube3      { position: relative;  z-index: 1;  top: 2px;  width: 38px;  height: 38px;  background-position: -276px -407px;  margin-left: -12px; margin-right: 5px;}
+.detalhesCurso .btAulaGratuita   button     {position:relative;background: #004570; padding: 2px 12px 4px 45px; font-size: 20px; font-size: 12px; font-weight: bold; top: -40px !important;  height: 40px; clear: both;border:none; width: 100%; color: #fff}
+.detalhesCurso .btAulaGratuita   button:hover { background: #045587}
+.detalhesCurso .sprite-paper                 {position: relative; z-index: 1;  top: 4px; width: 32px; height: 38px; background-position: -235px -443px; margin-left:15px; margin-right: 5px;}
+.detalhesCurso .aula                 {background: #004570; width: 100%; color:#fff; text-transform: uppercase; font-size: 20px; padding-bottom:10px; padding-top: 5px; margin-top: 8px }
+.detalhesCurso .dia                  {background: #cdcdcd; font-size: 16px; font-weight: bold; color: #004570; padding: 5px 0px 10px 0px}
+.detalhesCurso .situacao             { color: #1c9700; font-weight: bold; padding-top: 3px}
+.detalhesCurso .numeroVideos         { height: 17px; width:17px ;border-radius:20px; background: #e5e5e5; position: relative; z-index: 1; top: 13px; left: -15px; display: inherit; float: left;;padding-left: 6px; font-size: 10px}
+.detalhesCurso .sprite-pdf3          { position: relative;  z-index: 1;  top: 2px;  width: 38px;  height: 38px;  background-position: -228px -407px;  margin-left: -12px; margin-right: 5px;}
+.detalhesCurso .listaAulas           { margin-bottom: 40px}
+.detalhesCurso .divComprar           { background: #cdcdcd; margin: 0 auto !important; margin-left: 150px !important; height: 100px; padding: 30px 10px 10px 20px}
+.detalhesCurso .divComprar .itens div { float: left; margin-right: 90px; font-size: 15px; color: #004570}
+.detalhesCurso .divComprar .valor    { font-size: 20px; font-weight: normal;}
+.detalhesCurso .btComprarCurso       { position: relative; float: right; top: -40px}
+.detalhesCurso .mensagem             { background: #f5eda8 !important; padding: 35px; font-size: 13px; color: #1a678f;position: relative; top: 60px !important; width: 50%; margin: 0 auto; display: block; margin-top: 100px; clear: both;}
+.detalhesCurso .btsAssinatura        {position: relative; top: 30px !important; width: 50%; margin: 0 auto; display: block; margin-top: 100px; clear: both;}
+.detalhesCurso .btsAssinatura button { margin:0 auto !important; border: none; padding: 10px; color: #fff; font-weight:bold }
+.detalhesCurso .saibaMais button     { display: inline;float: left; width: 45%; background: #1e9ec5; margin-right: 60px !important;}
+.detalhesCurso .saibaMais button:hover { background: #25b0db;}
+.detalhesCurso .assinar   button     { display: inline;float: left; width: 45%; background: #004570}
+.detalhesCurso .assinar   button:hover { background: #0d5d8f}
+
+
+.tituloPagamento                       {text-align: left; font-size: 20px; color: #4ca92b; font-weight: bold; margin-top: 70px}
+.listaCursosPagamento                  { top: 40px !important; position: relative; }
+.listaCursosPagamento .curso           { background: #fff; padding: 15px; margin-bottom: 10px; color:#004570; font-size: 15px; font-weight: bold; text-align: left; }
+.listaCursosPagamento .detalhes        { float: right; position: relative; top:-3px; font-size: 17px; color:#1e9ec5;  float: right;}
+.listaCursosPagamento .maisDetalhes    { float: right; position: relative; top:4px; font-size: 12px;  text-transform: uppercase; color:#1e9ec5;  font-family: 'Open sans';float: right}
+.sprite-task                           { position: relative; top:-10px;  width: 32px;  height: 38px;  background-position: -90px -411px; margin-left: 20px; margin-right: 5px}
+.valorTotalCursos                      {float: right; background: #1e9ec5; width: 40%; color: #fff; padding: 15px; font-size: 14px;}
+.valorTotal                            {float: right; font-size: 15px; font-weight: bold}
+.desconto                              { background: #13819f; color:#fff; padding: 10px ; text-align: center; display: block; height: 42px; font-size: 15px}
+.tituloDesconto                        {text-align: left; font-size: 18px; color: #004570; font-weight: normal; margin-top: 70px; margin-bottom: 15px}
+.desconto .valor                       { text-align: right;  }
+.totalPagar                            { background: #004570; color:#fff; padding: 10px ; margin-top:20px; text-align: center; display: block; height: 42px; font-size: 15px}
+.totalPagar .valor                     { text-align: right;  }
+.totalPagar .total                     { text-align: left; }
+.pagamentoFooter                       { margin-top: 50px; color: #fff }
+.pagamentoFooter  button               {; border: none; padding: 15px; width: 25%;text-align: center;}
+.pagamento .voltar                     {float: left; background: #1e9ec5 }
+.pagamento .concluir                   {float: right; background: #e30613 }
+
+
+.menuAulas ul       { margin-left: -11px !important; padding-left: 0px !important; margin-top:30px;}
+.menuAulas ul li    { padding: 0px 0px 0px 10px; text-transform: uppercase; font-size: 20px; color: #4ca92b; text-align: center; }
+.menuAulas a        {color: #4ca92b; font-weight: 600}
+.menuAulas a:hover  { text-decoration: none; color:#37831c }
+.legenda            {position: relative;left: 80px; margin-bottom: 50px !important}
+.descricaoLegenda   { float: left; font-size: 12px; position: relative; top: 38px; color: #0092ce }
+.sprite-dwAulas     { position: relative; top: 30px; width: 32px; height: 38px; background-position: -200px -408px; margin-left: 20px; margin-right: 5px;}
+.sprite-videos      { position: relative; top: 30px; width: 32px; height: 38px; background-position: -123px -408px; margin-left: 20px; margin-right: 5px;}
+.sprite-forum       { position: relative; top: 30px; width: 32px; height: 38px; background-position: -164px -407px; margin-left: 20px; margin-right: 5px;}
+.sprite-dwAulasBl   { position: relative; top: 30px; width: 32px; height: 38px; background-position: -200px -440px; margin-left: 20px; margin-right: 5px;}
+.sprite-videosBl    { position: relative; top: 30px; width: 32px; height: 38px; background-position: -123px -440px; margin-left: 20px; margin-right: 5px;}
+.sprite-forumBl     { position: relative; top: 30px; width: 32px; height: 38px; background-position: -164px -439px; margin-left: 20px; margin-right: 5px;}
+.detalhesAula       { background: #e5e5e5; padding: 15px; margin-top: 20px; border:1px solid  #d2d2d2 }
+.atraso             { background: #ffd8da !important }
+.atrasoDias         { color: #e30613 !important }
+.aguardar           { background: #dcf4ff !important }
+.aguardarCrono      { color: #1b79ab !important }
+.nomeAula           { color:#4f4f4f ; float: left; font-weight: bold; width: 20%; margin-top: 8px }
+.disponivel         { color:#00aa0c ; float: left; margin-top:12px; font-weight: bold; font-size: 12px; width: 15%}
+.previsao           {color:#4f4f4f; font-size: 12px; margin-top: -5px; text-align: center; display: block; }
+.previsao ul li     { margin-right: 15px }
+.legendaAcoes       {position: relative; top: -30px; float: right;}
+.qtdLegenda         { background: #ebebeb; font-weight: bold; color:#1e9ec5; padding: 3px 0px 0px 6px; border-radius: 30px; width: 25px; height: 25px;float: right; position: relative;top: 35px;left: 5px; font-size: 12px }
+.aulasFooter button {float: left; width: 20%; border:none !important; margin-right: 20px; margin-top: 20px; padding: 10px; color: #fff; font-size: 12px; font-weight: bold }
+.avaliarCurso       {background: #4ca92b;}
+.gerarCertificado   {background: #1e9ec5;}
+
+
+.menuForum ul       { margin-left: -25px !important; padding-left: 0px !important; margin-top:30px; margin-bottom: 20px}
+.menuForum ul li    { padding: 0px 0px 0px 10px; text-transform: uppercase; font-size: 20px; color: #4ca92b; text-align: center; }
+.menuForum a        {color: #4ca92b; font-weight: 600}
+.menuForum a:hover  { text-decoration: none; color:#37831c }
+.duvida             { position:relative;top: 40px !important; color:#e30613; font-size: 13px}
+.sprite-duvida      { position: relative; top: -10px; width: 35px; height: 40px; background-position: -51px -407px; margin-left: 20px; margin-right: 5px;}
+.boxDuvida          { margin: 0 auto; margin-bottom: 30px; width: 80%; clear: both; position: relative;top: 50px }
+.boxDuvida .topo    {background: #1f91cb; padding: 20px; color:#fff; text-transform: uppercase;}
+.boxDuvida .statusDuvida     {float:right; color:#00fe1e}
+.boxDuvida .aguardandoRes    {float:right; color: #fefb00 !important }
+.boxDuvida .conteudo         { background: #fff; padding: 20px; color: #4f4f4f; text-align: justify; }
+.boxDuvidaResposta          { margin: 0 auto; margin-bottom: 60px; margin-top: -20px; margin-left: 245px; width: 70%; clear: both; position: relative;top: 80px }
+.boxDuvidaResposta .topo    {background: #004570; padding: 20px; color:#fff; text-transform: uppercase;}
+.boxDuvidaResposta .statusDuvida     {float:right; color:#00fe1e}
+.boxDuvidaResposta .conteudo         { background: #daf2ff; padding: 20px; color: #4f4f4f; text-align: justify; }
+.sprite-seta                    { position: absolute; top: 600px; left: 219px;width: 41px;  height: 59px;  background-position: -51px -446px;  margin-left: 20px;   margin-right: 5px;}
+
+
+.professor { padding: 10px; position:relative; top: 20px;   background:#fff  }
+.professor .profNome { position: relative;left: -50px !important; top: -20px; font-weight: bold; }
+.professor .foto { float: left; width: 40% }
+.foto .usuario.small .usr-img{
+  left: inherit;
+  right: inherit;
+}
+.professor .botoes { float: left; width: 50% }
+.nivelProf          { position: relative;top: -15px; color: #f37800 }
+.formacaoProf       { position: relative;top: -15px; color: #1e9ec5 }
+.btCurso{
+  position: relative;
+  top: -6px;
+  left: 36px;
+
+}
+.btCurso button     { background: #fde200;border: none;padding: 3px 10px 3px 48px;position: relative;top: 33px;color: #1a678f;font-weight: bold; }
+.btCurso i          { position: relative; z-index: 5; left: 36px;  top: 20px;   color: #1a678f !important; }
+.sprite-cursosAzul { width: 37px; height: 44px; background-position: -131px -98px;}
+.botoes  span       { color: #fff !important ; text-transform: uppercase; font-size: 12px}
+.botoes3 button          { position: relative; float:left;left: 150px ; background: #1e9ec5; border:none; padding: 4px 25px 4px 60px; color: #fff; font-size: 13px}
+.botoes3 button:hover   {background: #21add8}
+.seguir i               { position: relative;  left: 201px;  top: 2px;   z-index: 3;}
+.msg i                  { position: relative; left: 197px;  top: 6px; z-index: 3;}
+.pagina i                  { position: relative; left: 197px;  top: 3px; z-index: 3;}
+.detalheProf   i         { position: relative;top: 5px; left:580px;z-index: 5; margin:0 auto  }
+.sprite-menos             {     width: 33px;
+    height: 30px;
+    background-position: -56px -364px;}
+.detalheProfessorExpand   { padding: 15px; background: #fff; height: 200px; clear: both; color:#696969; margin: 0 auto ; width: 100%; }
+.detalheProfessorExpand ul { text-align: center; margin-left: -10px }
+.detalheProfessorExpand ul li { border-right: 1px solid #cecece; padding-right: 10px; padding-left: 10px}
+.avaliacao              { clear: both; color: #1e9ec5; position: relative; top: 10px; }
+.avaliacaoLista         { font-size: 12px !important; color: #696969; position: relative; top: 10px; margin-right: 12px }
+.avaliacaoLista .nota   {background: #1e9ec5; width: 40px; font-size: 18px; text-align: center; color: #fff; margin-left: 15px; margin-top: 10px}
+.avaliacaoLista         { float: left;  }
+.avaliacaoLista .item   {background: #ececec !important; color:#1e9ec5;}
+.avaliacaoLista .aceitacao  { color:#10a900; background: none; font-weight: bold }
+.sprite-anotacao         { width: 37px;   height: 44px; background-position: -487px -518px;}
+.sprite2                 {  background-image: url(../img/spritesheet_2.png);  background-repeat: no-repeat;   display: block;    float: left;    cursor: pointer;}
+.avaliacao .lista        { position:relative;left:-35px; top: 15px }
+.sobreProf               { float: right; width: 65%; text-align: justify; position: relative; top: -60px; position: relative; }
+.sobreProf .conteudo     {font-size: 12px; color:#1e9ec5; position: relative;top: -10px}
+.sobre                   { color: #1a678f !important; font-weight: 500 !important; margin-bottom: 20px; position: relative; }
+.sobre  i                {position: relative; height: 40px}
+.grid                    { margin:0 auto; width: 80%; text-align: center; }
+.conteudoPapiro          {position: relative;top: 20px; margin-bottom: 50px; }
+.conteudoPapiro p        {color: #757575}
+.topoLinha1  div         { float: right !important; width: 20%; background: #cecece; display: block; padding: 15px; margin-right: 15px }
+.vip                     {background: #f37800 !important; color:#fff;}
+.basico                  {background: #004570 !important; color: #fff}
+.intermediario           {background: #1e9ec5 !important; color: #fff}
+.topoLinha2              { clear: both; }
+.topoLinha2  div         { float: right !important; width: 20%; background: #cecece; display: block; padding: 5px; margin-right: 15px; margin-top: 10px }
+.linhas                  { clear: both; }
+.linhas  div             { float: right !important; width: 20%; background: #eae8e5; display: block; padding: 5px; height: 30px; margin-right: 15px; margin-top: 10px }
+.cinza                   {background: #939393 !important; color: #fff; width: 300px !important; text-align: center}
+.verde                  { background: #4ca92b; clear: both; width: 14% ; margin-left: 153px; position: relative;top: 14px;height: 151px; color: #fff; padding-top: 70px; float: left;}
+.colunaDias             {position: relative;top: -137px;left: 340px}
+.colunaDias .item       {float: left; clear: both; background: #2b78a9;  height: 29px; padding-top: 4px; margin-bottom: 11px; display: block; width: 115px; font-weight: bold; color: #fff}
+.grid2                  { margin:0 auto; width: 80%; text-align: center; position: relative;top:-308px;}
+.grid2 .linhas          { font-size: 16px; font-weight: bold; color: #004570; }
+.conhecaTermos          {position: relative;top: -278px; left: 165px}
+.esperandoMsg           {margin:0 auto; font-size: 25px; color: #004570; position: relative; left: 166px; text-transform: uppercase; font-weight: bold;}
+.opcaoArquivo           { position: relative; top: -20px !important; left: 273px }
+.opcaoArquivo ul li     { margin-right: 15px }
+.opcaoArquivo .sprite-select {  width: 35px;  height: 33px;  background-position: -370px -372px;}
+.opcaoArquivo .sprite-select.active        {  width: 35px;  height: 33px;  background-position: -333px -372px;}
+// .opcaoArquivo label     { position: relative; top: 2px; color: #1e9ec5; font-size: 20px;font-weight: normal }
+
+.assinar                {position: relative;left: 569px;top: 35px}
+.btAssinar              { background: #4ca92b; padding: 20px 45px 20px 45px; border:none; font-size: 20px; color: #fff }
+.btAssinar:hover        {background: #58c032 !important}
+.periodoDesejado select { width: 200px; position: relative; left: 380px; top: -45px  }
+.periodoDesejado i      { position: relative;left: 579px; top: -42px }
+.sprite-select          {   width: 33px;   height: 27px;   background-position: -346px -229px; cursor: pointer !important}
+.sprite-select .active  { background: none }
+
+//ajustes
+span, p, div, h1, a, button{
+  font-weight: 400 !important;
+}
+.conteudoPop {
+  .titulo{
+      .font(400; 18px) !important;
+  }
+  .mensagem{
+    p{
+      .font(400; 18px) !important;
+      span{
+        .font(500; 18px) !important;
+      }
+    }
+  }
+}
+.small-box{
+  display: block;
+  width: 15px;
+  height: 15px;
+  border: 1px solid #666;
+  position: relative;
+  top: 23px;
+  left: 257px;
+}
+.overlay{
+  display: block;
+}
+.overlay .select-option label{
+  .font(400; 18px) !important;
+  color: #696969
+}
+.bloco-papiro{
+  .box-feed{
+    width: 732px;
+    p{
+      margin-top: 30px;
+      display: block;
+      line-height: 1.1 !important;
+      text-align: justify;
+      .font(400; 14px) !important;
+      u{
+        text-decoration: none;
+      }
+    }
+  }
+}
+.bloco-forum{
+  .box-feed{
+    padding: 40px 110px;
+    width: 1046px;
+    .box-modal-forum{
+      width: 375px;
+      padding: 10px;
+      p{
+        text-align: center;
+        color: #fff;
+        &.desc{
+          .font(300; 14px) !important;
+          line-height: 1.1 !important;
+          width: 210px;
+          margin: 0 auto;
+          b{
+            font-weight: 500;
+            text-decoration: underline;
+          }
+        }
+        &.valor{
+          span{
+            display: block;
+            &.bigprice{
+              margin-top: 20px;
+              .font(500; 30px)
+            }
+            &.pagamento{
+              .font(300; 18px);
+              margin-top: -10px;
+            }
+          }
+
+        }
+        .font(300; 18px) !important;
+        span{
+          color: #fff;
+          &.bold-title{
+            .font(600; 18px) !important;
+            margin-top: -10px;
+            display: block;
+          }
+        }
+      }
+    }
+  }
+}
+.bloco-aulas{
+  .box-feed{
+    width: 745px;
+    height: 653px;
+    .medtitle{
+      .font(500; 14px);
+      color: #1e9ec5;
+    }
+    p{
+      .area-comentarios{
+        width: 685px;
+        max-width: 685px;
+        min-height: 125px;
+        border: 1px solid #d4d4d4;
+        padding: 10px;
+        margin: 10px auto;
+      }
+    }
+    .option-group{
+      margin-left: 0;
+      width: 100%;
+      .payment-methods{
+        width: 100%;
+        .payment-method{
+          width: 54px;
+          margin-right: 10px;
+          label{
+            left: 0 !important;
+            span{
+              color: #1e9ec5;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.bloco-forum1{
+  .box-feed{
+    width: 986px;
+    background-color: #f1f1f1;
+    .bigtitle{
+      .font(300; 24px) !important;
+    }
+    p{
+      .area-duvida{
+        width: 612px;
+        max-width: 612px;
+        height: 75px;
+        border: 0;
+        padding: 10px;
+      }
+      .btn{
+        position: relative;
+        top: 20px;
+        left: 20px;
+      }
+    }
+  }
+}
+.sprite-forum {
+    margin-left: 10px !important;
+    margin-right: -5px !important;
+}
+.sprite-forumBl {
+    margin-left: 8px !important;
+    margin-right: -4px !important;
+}
+.duvida u{
+  cursor: pointer;
+}
+.avaliacao-dados{
+  position: relative;
+top: 20px;
+left: -3px;
+}
+.sprite-checked {
+    background-position: -317px -559px;
+    width: 19px;
+    height: 18px;
+    display: inline-block;
+    position: relative;
+    top: 2px;
+    float: none;
+}
+.nivelProf{
+  font-weight: 500 !important
+}
+strong{
+  font-weight: 500 !important
+}
+.opcaoArquivo .option-group .payment-method label span{
+  .font(500; 18px) !important;
+}
+.detalhamentoDescricao p{
+  .font(400; 16px) !important;
+}
+.p-div{
+  width: 50%;
+}
+.curso{
+  margin-bottom: 45px !important;
+}
+.publicacoesDestaque{
+  .curso{
+    margin-bottom: 13px !important
+  }
+  .usuario.small {
+    position: relative;
+    left: 10px;
+    .usr-img {
+      width: 46px;
+      height: 46px;
+      left: -4px;
+      right: 0;
+      top: -4px;
+      margin: 0 auto;
+    }
+  }
+  .menu-name{
+    float: left;
+    text-align: left;
+    margin-left: 29px;
+  }
+  .book-desc{
+    float: left;
+    margin-left: 29px;
+    span{
+      float: left;
+      color: #1e9ec5;
+      text-align: left;
+    }
+  }
+}
+.sliderVideos{
+  background-color: #1e9ec5;
+  padding: 20px;
+  margin-top: 20px;
+  position: relative;
+  &.fnd-cinza{
+    background-color: #dadada;
+    .slide-button{
+      color: #004570;
+    }
+    .box-videos{
+      span{
+        color: #004570;
+      }
+    }
+  }
+  iframe{
+    border: 1px solid #fff;
+  }
+  .slide-button{
+    color: #fff;
+    .font(600; 49px);
+    &.btn-left{
+      position: absolute;
+      left: 16;
+      top: 90px;
+    }
+    &.btn-right{
+      position: absolute;
+      right: 16px;
+      top: 90px;
+    }
+  }
+  .box-videos{
+    margin-bottom: 0px;
+    margin: 0px 38px;
+    width: 311px;
+    span{
+      display: block;
+      color: #fff;
+      &.date{
+        .font(500; 16px);
+      }
+      &.desc{
+        .font(400; 14px);
+      }
+    }
+  }
+}
+.no-margin{
+  margin: 0 !important
+}

@@ -1,0 +1,2390 @@
+// Width variables (appears count calculates by raw css)
+@width4: 15px; // Appears 2 times
+// Height variables (appears count calculates by raw css)
+@height0: 15px; // Appears 2 times
+.relative{
+  position: relative;
+}
+.loadFont(@Weight; @Name; @Local;  @Ttf:'../fonts/@{Local}.ttf';){
+    font-family: 'Muli';
+    font-style: normal;
+    font-weight: @Weight;
+    src: url(@Ttf);
+
+}
+@font-face {.loadFont(100;'Muli ExtraLight';'Muli-ExtraLight')}
+@font-face {.loadFont(300;'Muli Light';'Muli-Light')}
+@font-face {.loadFont(400;'Muli';'Muli')}
+@font-face {.loadFont(500;'Muli SemiBold';'Muli-SemiBold')}
+@font-face {.loadFont(700;'Muli Bold';'Muli-Bold')}
+
+.font(@weight:400; @size:14px; @font-family:'Muli'){
+    font:@arguments;
+}
+
+#wrapper-interna {
+    #content-left {
+        margin-left: 0 !important;
+        width      : 252px !important;
+        min-height: 1px;
+    }
+    #content-middle {
+        width: 590px !important;
+    }
+    #content-right {
+        margin-right: 0 !important;
+        width       : 294px !important;
+    }
+}
+#perfil {
+    .usr-alert {
+        font-size : 11px !important;
+        height    : @height0 !important;
+        left      : 40px !important;
+        padding   : 2px 3px 5px !important;
+        text-align: center !important;
+        width     : @width4 !important;
+    }
+    .menu-name {
+        margin-top: 10px !important;
+    }
+}
+#mensagem {
+    .usr-alert {
+        font-size : 11px !important;
+        height    : @height0 !important;
+        left      : 40px !important;
+        padding   : 2px 3px 5px !important;
+        text-align: center !important;
+        width     : @width4 !important;
+    }
+    .menu-name {
+        margin-top: 10px !important;
+    }
+}
+.publicacao {
+    h4 {
+        font-size: 14px !important;
+    }
+}
+.btn-gray {
+    color: #696969;
+}
+.expand {
+    &:hover {
+        text-decoration: underline;
+    }
+}
+.box-denuncia {
+    .denuncia {
+        .font(400; 12px);
+        padding-top: 7px;
+    }
+}
+.artigo {
+    .box-title {
+        width: 296px;
+        .title-publicacao {}
+    }
+}
+#published-avancado {
+    label {
+        select {
+            padding: 9px;
+        }
+    }
+}
+#content-right {
+    .btn-ok {
+        padding: 1px 12px;
+    }
+    .btn-papo {
+        padding: 4px 14px;
+    }
+    .anuncio {
+        .name-anunciantes {
+            .font(500; 12px);
+        }
+        .site-anunciante {
+            margin-bottom: 2px;
+            display      : block;
+        }
+    }
+}
+.papo {
+    #content-left {
+        margin-left: 10px !important;
+        .profile-img{
+          background-repeat: no-repeat;
+          background-position: center;
+        }
+    }
+    #content-middle {
+        margin: 0;
+    }
+}
+.overlay {
+    .box-feed {
+        display : block;
+        left    : 0;
+        margin  : 23px auto !important;
+        position: absolute;
+        right   : 0;
+        top     : 30px;
+    }
+    .menu-cadastro{
+        ul{
+            li{
+                a{
+                    padding: 10px 14.7px;
+                }
+                &.no-cadastro{
+                    a{
+                        min-height: 52px !important;
+
+                    }
+                }
+            }
+        }
+    }
+    .content-cadastro{
+        min-height: 464px;
+    }
+    .div-professores1, .div-anunciantes1{
+        top: 0px;
+    }
+}
+.box-button.half {
+    .btn {
+        padding: 0 73px;
+    }
+}
+.user-details ul li a.perfil-porcentagem {
+    .font(500; 18px);
+}
+ul.desafios li a {
+    .font(500; 13px);
+}
+.edital .sprite-pdf {
+    .font(500; 15px;)
+}
+.edital-info span.ano {
+    margin-bottom: 20px;
+}
+.box-interesse p {
+    text-align: justify;
+}
+.interesse {
+    margin-bottom: 5px;
+    .sprite-close_gray {
+        top: 5px !important;
+    }
+}
+#expand-list li a {
+    margin-right: 5px;
+}
+.sprite-lupa {
+    background-position: -94px -277px;
+}
+.search input {
+    border : 0;
+    padding: 7px 7px 7px 12px;
+}
+.box-area {
+    padding         : 10px;
+    background-color: #fff;
+    margin          : 20px 0;
+    .btn {
+        margin-left: -10px;
+    }
+    p {
+        .font(500; 18px);
+        color      : #00ca18;
+        line-height: 1.1;
+        margin     : 0;
+    }
+    .content {
+        margin: 20px 0;
+    }
+    ul li a {
+        color        : #004570;
+        margin-bottom: 5px;
+        .font(500; 14px);
+        .num-vagas {
+            color: #696969;
+            .font(400; 11px);
+        }
+    }
+    .ver-todos {
+        .font(500; 14px);
+    }
+    .p-div {
+        margin-bottom: 20px;
+        .span-title {
+            text-transform: uppercase;
+            .font(500; 14px);
+        }
+        .span-desc {
+            color: #1e9ec5;
+            .font(500; 13px);
+        }
+    }
+}
+.area-conc {
+    margin-bottom: 50px;
+    h6 {
+        padding   : 0;
+        float     : none;
+        text-align: center;
+        .font(500; 15px);
+    }
+    .num-concursos {
+        span {
+            text-transform: none;
+            margin-top    : -3px !important;
+            display       : block;
+        }
+    }
+}
+.container_16.papo {
+    padding-top: 77px;
+}
+.pag-option .btn {
+    margin: 0 32px;
+}
+.margin-min .btn {
+    margin: 0 8px !important;
+}
+.papo > .grid_4 .anuncio .banner-patrocinio {
+    height: 280px;
+}
+.papo > .grid_12 .anuncio .banner-patrocinio {
+    height: 110px;
+}
+.professor .novo-curso .box-top .box-title .title-publicacao {
+    .font(500; 18px)
+}
+.margin-btns .btn {
+    margin: 0 21px;
+}
+.margin-btns-pq .btn {
+    margin: 0 8px !important;
+}
+.expand-big li a {
+    .font(500; 17px) !important;
+    color: #16678e !important;
+}
+.papo.container_16 > #content-right {
+    width: 180px !important;
+}
+.professor .box-top .box-title .title-publicacao {
+    .font(500; 13px);
+}
+.expirados {
+    margin-top: 20px;
+}
+.overlay button .sprite-youtube {
+    filter: saturate(0) brightness(10);
+}
+.overlay .video-btns {
+    top: 10px;
+}
+.box-button .btn {
+    margin-bottom: 0;
+}
+.site-info ul li {
+    margin: 0 17.6px;
+}
+.menu-topo {
+    display: block;
+    float  : left;
+    margin : 21px 0 0 46px;
+}
+.anuncio.small .text-anunciantes {
+    .font(400;11px) !important;
+    color: #696969;
+}
+header h1.logo-interna a {
+    margin-top: 7px;
+}
+.professor .box-top .box-title .title-publicacao {
+    margin-top: 11px;
+}
+.box-denuncia .denuncia {
+    padding-top: 3px;
+}
+#expand-list.expand-big li a {
+    border-right: 0;
+    position    : relative;
+    margin-right: 13px;
+}
+#expand-list.expand-big li:last-child a:after {
+    display: none;
+}
+#expand-list.expand-big li a:after {
+    border          : 1px solid #16678e;
+    height          : 16px;
+    width           : 0;
+    display         : block;
+    position        : absolute;
+    background-color: #000;
+    right           : -3px;
+    content         : '';
+    top             : 6px;
+}
+header {
+    -webkit-box-shadow: 0 -1px 5px 0 rgba(0,0,0,0.39);
+    -moz-box-shadow   : 0 -1px 5px 0 rgba(0,0,0,0.39);
+    box-shadow        : 0 -1px 5px 0 rgba(0,0,0,0.39);
+}
+.overlay {
+    z-index: 1002;
+}
+.price-actions .btn {
+    .font(500; 12px) !important;
+    margin-bottom: 4px;
+    line-height  : 1 !important;
+}
+.price-actions .btn.bgr-darkgreen {
+    .font(500; 18px) !important
+}
+.price-actions .btn.bgr-blue .sprite-materias,
+.price-actions .btn.bgr-blue .sprite-youtube_red {
+    margin-top  : 2px;
+    margin-right: 10px;
+}
+.price-actions .btn.bgr-blue .smallcaps {
+    color  : #fff;
+    display: block;
+}
+.white-icon {
+    filter: saturate(0) brightness(3);
+}
+.smallcaps {
+    text-transform: none !important;
+}
+.none {
+    display: none;
+}
+.overlay .box-feed {
+    z-index: 1003;
+}
+.desc-title {
+    .font(500; 17px) !important;
+}
+.publicacao h4 {
+    .font(500; 20px)
+}
+.bgr-mestre {
+    background-color: #004570;
+}
+h4 .sprite-youtube_excla {
+    left: 81px;
+    top : 4px;
+}
+#content-middle .publicacao .publish-options,
+#content-middle .publicacao textarea,
+input {
+    border-color: #cccccc;
+}
+#content-middle .publicacao input {
+    // border-bottom: 0;
+}
+select {
+    -webkit-appearance: none;
+    -moz-appearance   : none;
+    appearance        : none;
+}
+.interacoes .alert-icon,
+.interacoes .alert-msg {
+    cursor: pointer;
+}
+.usr-img {
+    overflow: hidden;
+}
+.alterar-foto {
+    width           : 100%;
+    .font(500; 10px);
+    background-color: #555;
+    padding         : 3px 0 25px;
+    position        : relative;
+    top             : 42px;
+    display         : block;
+    text-align      : center;
+    color           : #fff;
+    background      : rgba(0, 0, 0, 0.6);
+    display         : none;
+    cursor          : pointer;
+}
+#content-left .usuario:hover .alterar-foto,
+.pag-option .usuario:hover .alterar-foto {
+    display: block;
+}
+.financeiro .select-option {
+    width: 144px;
+}
+.financeiro .same-line {
+    width: 150px;
+}
+table.table-professor tr.linha {
+    background-color: #f1f1f1;
+}
+table.table-professor tr.odd {
+    background-color: #d4d3d3 !important;
+}
+table.table-professor tr.linha:hover {
+    background-color: #1e9ec5 !important;
+}
+table.table-professor tr.linha:hover td {
+    color: #fff;
+}
+table.table-professor tr {
+    height: 34px;
+}
+.box-concurso .detalhes {
+    .font(500; 13px) !important
+}
+.cursos {
+    margin-top: 19px;
+}
+.ebook {
+    margin-top: 8px;
+}
+.tipos-curso .payment-method label {
+    background-color: #f1f1f1;
+    width           : 133px;
+    left            : -1px;
+}
+.option-group.tipos-curso {
+    width  : 474px;
+    padding: 18px 5px 0;
+    height : 31px;
+}
+.tipos-curso .payment-methods {
+    width: 474px;
+}
+.tipos-curso .payment-method {
+    width: 133px;
+}
+.box-interesse .box-input {
+    margin-right: 40px;
+}
+.radio-padrao {
+    width      : 100%;
+    margin-left: 0;
+}
+.radio-padrao ul {
+    width        : 100%;
+    margin-bottom: 0;
+    padding-top  : 13px;
+}
+.radio-padrao ul li label {
+    background-color: #f1f1f1;
+    left            : -1px;
+}
+.radio-padrao ul.double li {
+    width: 50%;
+}
+.box-interesse textarea.text-area {
+    width: 950px;
+}
+.terco {
+    width: 40% !important;
+}
+.avaliacao-big {
+  ul {
+      float: left;
+  }
+}
+.professor .avaliacao-big ul li a .avaliacao-name {
+    text-transform: uppercase;
+    color         : #004570;
+}
+.professor .avaliacao-big ul li a {
+    width       : 70px;
+    margin-right: 52px;
+}
+.professor.gd .avaliacao-alunos ul li a .avaliacao-nota {
+    padding         : 12px;
+    background-color: #fff;
+    span{
+      background-color: transparent;
+    }
+}
+.professor.gd .avaliacao-alunos ul li a .avaliacao-nota.geral {
+    background-color: #004570;
+    span{
+      background-color: transparent
+    }
+}
+
+//
+.professor .avaliacao-alunos ul li a .avaliacao-nota {
+    padding         : 12px;
+    background-color: transparent;
+    span{
+      background-color: #ececec;
+      .font(500; 17px)
+    }
+}
+.professor .avaliacao-alunos ul li a .avaliacao-nota.aceitacao{
+  span{
+    background-color: transparent
+  }
+}
+.professor .avaliacao-alunos ul li a .avaliacao-nota.geral {
+    background-color: transparent;
+    span{
+      background-color: #1e9ec5;
+    }
+}
+//
+
+
+.one-line {
+    vertical-align: middle;
+    display       : table-cell;
+    padding       : 7.5px 0;
+}
+.aceitacao-prof .menu-name {
+    margin: 40px 0 0 84px !important;
+    .font(500; 15px);
+    color : #004570;
+}
+.comment-aluno {
+    padding         : 10px;
+    background-color: #1e9ec5;
+    margin-top      : 10px;
+}
+.comment-aluno p {
+    color         : #fff;
+    margin        : 3px 0;
+    text-transform: uppercase;
+    .font(400; 13px);
+}
+.comment-aluno p.margin-b b {
+    margin: 0 20px;
+}
+.comentario-avaliacao {
+    padding         : 10px;
+    background-color: #fff;
+}
+.comentario-avaliacao p {
+    margin-top: 0;
+    color     : #696969;
+}
+.btn-concurso .btn-text,
+.btn-papo .btn-text {
+    font-size: 16px;
+}
+#content-right .btn-ok {
+    padding: 1px 9px;
+}
+#expand-list.expand-font-menor li a {
+    margin-right: 4px;
+    .font(500; 12px) !important;
+}
+#expand-list.expand-font-menor li a::after {
+    border          : 1px solid #16678e;
+    height          : 10px;
+    width           : 0;
+    display         : block;
+    position        : absolute;
+    background-color: #000;
+    right           : 2px;
+    content         : '';
+    top             : 5px;
+}
+.span-div {
+    margin-right: 45px;
+}
+.span-div .menu-name {
+    margin        : 5px 0 0 31px;
+    display       : block;
+    width         : 100px;
+    text-transform: uppercase;
+    .font(500; 13px);
+    color         : #1e9ec5;
+}
+.box-videos {
+    margin-bottom: 20px;
+}
+.nav-user.nav-professor li a {
+    width: 127.5px;
+}
+.desafios .expirados {
+    margin-top: 0 !important;
+}
+.btn-pagina .menu-alert {
+    top: 12px;
+}
+.container_16 .grid_14 {
+    width: 840px;
+}
+.menu-orientacoes {
+    height: 123px;
+}
+.app-pages {
+    padding-top: 71px;
+}
+.box-app .bigtitle {
+    .font(500; 14px)
+}
+span.graytitle {
+    .font(500; 13px)
+}
+.bgr-gray {
+    background-color: #eaeaea !important;
+}
+.bgr-gray .bigtitle {
+    color: #696969;
+}
+p.normal,
+p.warning {
+    .font(500; 14px);
+    line-height: 1.1;
+}
+.ciclos {
+    background-size: contain;
+    min-height     : 580px;
+}
+.app-header {
+    height: 71px;
+    .container_16 {
+        padding-top: 5px;
+    }
+    .usuario {
+        top  : 5px !important;
+        left : inherit !important;
+    }
+    .usr-name {
+        color   : #fff;
+        position: absolute;
+        right   : 230px;
+        top     : 13px;
+        .font(500; 17px);
+    }
+    .user-details ul {
+        position: absolute;
+        top     : 25px;
+        right   : 47px;
+        li a {
+            .white-icon
+        }
+    }
+    .menu-topo {
+        top: 25px;
+    }
+    .sprite-power{
+        margin-right: 25px;
+    }
+}
+.bgr-green2 {
+    background-color: #90b92e !important;
+}
+.sprite-ranking {
+    background-position: -444px -445px;
+    width              : 39px;
+    height             : 35px;
+}
+.btn-ranking {
+    padding: 4px 95px 4px 27px;
+    margin : 30px 0;
+    .menu-name {
+        position: relative;
+        top     : 8px;
+        left    : 39px;
+        .font(500; 16px);
+    }
+}
+.btn-clearblue {
+    background-color: #13819f !important;
+}
+.box-menu-app .btn {
+    margin-bottom: 64px;
+}
+.app-manual {
+    padding: 19.5px 20px !important;
+}
+.app-orientacoes {
+    padding: 19.5px 12.5px !important;
+}
+.app-ebook {
+    margin-bottom: 0 !important;
+    padding      : 16.5px 36px !important;
+}
+.border-blue {
+    border: 4px solid #004570 !important;
+}
+.grid_3 .sprite-pdf {
+    position: absolute;
+    top     : -30px;
+    left    : 0;
+    right   : 0;
+    margin  : 0 auto;
+}
+.container_16 .grid_3.relative {
+    width: 188px;
+}
+h1.bluetitle.center-text {
+    .font(500; 30px);
+    color: #1a678f;
+}
+.sprite-ciclos_app {
+    margin-bottom: 50px !important;
+}
+.box-interesse label,
+p.normal {
+    color: #397b9e !important;
+}
+p.warning {
+    color: #ff0200 !important;
+}
+.input-time.bgr-oceanblue {
+    color: #fff !important;
+}
+.time-label {
+    width      : 207px !important;
+    margin-left: -41px;
+}
+.label-gd .box-interesse label {
+    .font(500; 16px)
+}
+.detail-materia .sprite-plus {
+    margin: 8px 0 9px 39px;
+}
+.smalldesc {
+    color: #696969;
+}
+.definicao-materias.table-professor tr.linha td,
+.definicao-materias.table-professor tr.linha td label {
+    color: #fff !important;
+}
+table.table-professor.definicao-materias tr.linha.gray {
+    background-color: #aaa !important;
+}
+.sprite-editar_gray {
+    background-position: -100px -152px;
+    width              : 22px;
+    height             : 19px;
+    margin             : 0 auto;
+    float              : inherit;
+}
+.sprite-alert_red {
+    background-position: -70px -151px;
+    width              : 22px;
+    height             : 19px;
+    margin             : 0 auto;
+    float              : inherit;
+}
+.linha-blue th {
+    background-color: #1a678f;
+}
+.definicao-materias.table-professor tr.linha td {
+    // padding: 5px !important;
+}
+.container_16 .box-interesse .grid_4 {
+    width: 292px !important;
+}
+.border-black td {
+    border-color: #000 !important;
+}
+.squares td {
+    border-radius: 0 !important;
+    border-color : #888888;
+}
+.box-dadm ul {
+    margin-left: 4px;
+}
+.box-expand::after {
+    border-bottom-color: #ffffff !important;
+    border-width       : 15px !important;
+    border             : solid transparent;
+    bottom             : 100%;
+    content            : " ";
+    height             : 0;
+    left               : 30%;
+    margin-left        : -10px;
+    pointer-events     : none;
+    position           : absolute;
+    width              : 0;
+    top                : -25px;
+}
+.box-app{
+  .smalltitle{
+    .font(400; 12px)
+  }
+}
+.box-app .filtros-selecionados {
+    width: 200px !important;
+}
+.box-app .box-campo label {
+    width     : 140px !important;
+    text-align: left;
+    .font(400; 12px);
+    color: #696969 !important
+}
+.box-resultado > div:first-child {
+    width: 675px;
+}
+.box-resultados {
+    margin-bottom: 20px;
+    .box-resultado {
+        margin-bottom: 30px;
+        .bluetitle{
+          text-transform: none;
+          .font(400; 14px);
+          margin-bottom: 3px
+        }
+        .desc-stats{
+          margin-bottom: -5px;
+          .bluetitle{
+            .font(400; 12px) !important
+          }
+        }
+    }
+}
+.question-details {
+    position: absolute;
+    top     : 48px;
+}
+.anuncio-app .graytitle,
+.question-details .graytitle {
+    float  : none;
+    padding: 0 !important;
+}
+.anuncio-app .anuncio-box {
+    .font(400; 18px)
+}
+.comments .bigtitle {
+    .font(500; 14px);
+    color         : #1a678f;
+    text-transform: uppercase;
+}
+.comments {
+    margin-top: 45px;
+    ul.desafios li a {
+        width  : 152px;
+        padding: 14px 0px 14px 29px;
+        .menu-name {
+            color   : #696969;
+            position: relative;
+            top     : 3px;
+            left    : 0px;
+            .font(400; 9px);
+        }
+    }
+    .user-details{
+      padding: 7px 0;
+      .usr-name{
+        text-align: left;
+        float: left;
+        .font(500; 11px) !important;
+        top: 6px;
+        position: relative;
+      }
+    }
+    .box-msg{
+      position: relative;
+      .user-details ul{
+        float: left;
+        width: 103px !important;
+        margin-left: 10px
+      }
+      .feed-info{
+        position: absolute;
+        top: 25px;
+        right: -102px;
+        .publish-up{
+          color: #1a678f;
+          .font(400; 10px)
+        }
+      }
+      .msg-text{
+        margin-top: 20px;
+      }
+    }
+}
+.box-app p.p-title {
+    .font(400; 24px;)
+}
+.div-p {
+    width: 622px;
+}
+.input-bg {
+    margin          : -2px 0 0 10px;
+    background-color: #f1f1f1;
+    .font(400; 12px);
+    width: 313px !important
+}
+.filtros-selecionados {
+    ul li i {
+        margin: 4px 0 0 15px;
+    }
+    .graytitle {
+        padding: 10px 0;
+        .font(400; 14px);
+    }
+}
+.box-app .type-curso li {
+    input {
+        margin: 0;
+    }
+    label {
+        .font(400; 14px);
+        margin-left: 10px
+    }
+    label.label-tamanho{
+      width: 23px;
+    }
+    label.label-grande{
+      width: 315px;
+    }
+}
+.app-pages .box-content.mensagens{
+  border-color: #e1e1e1;
+  background-color: #fff
+}
+.msg-text{
+  margin-bottom: 0
+}
+.app-pages .box-content.mensagens .right-content {
+    max-height: 450px;
+    min-height: 450px;
+}
+.h2-resultado{
+  .font(500; 15px) !important;
+  margin-bottom: -20px !important;
+  margin-top: 35px !important;
+}
+.box-app input.input-search{
+  background-position: 354px -273px;
+}
+input{
+  padding: 7px 10px;
+}
+.sub-campo{
+  .select-option{
+    margin-left: 27px;
+  }
+  .input-filtro{
+    width: 300px !important;
+  }
+}
+.publicacao .select-option select.sprite-seta2_option{
+  width: 101px !important;
+  background-position: -1399px 0 !important;
+  padding: 10px 6px !important;
+}
+.anuncio-app .anuncio-box{
+  padding: 27px 47px
+}
+.concurseiro-stats {
+  span{
+    b{
+      color: #1e9ec5;
+      .font(300; 19px)
+    }
+  }
+}
+table.table-ranking{
+  tr.topo{
+    background-color: #1a678f !important
+  }
+  tr.linha.odd:hover, tr.linha.odd{
+    background-color: #e9e9e9 !important;
+    td{
+      color: #1a678f
+    }
+  }
+  tr.linha{
+    border-bottom: 0;
+    border-top: 2px solid #fff
+  }
+  tr.linha.minha-posicao, tr.linha.minha-posicao:hover{
+    background-color: #b5e0ed !important
+  }
+  tr.linha:hover, tr.linha{
+    background-color: #dbdbdb !important;
+    td{
+      color: #1a678f
+    }
+  }
+}
+
+.app-header{
+  background-color: #004570 !important
+}
+.user-details.peq ul li {
+    float: left;
+    margin-right: 6px;
+}
+.icons-comment {
+  margin-top: 5px;
+  li{
+    margin-right: 8px;
+  }
+}
+.box-comment{
+  position: relative;
+
+  .sprite-image{
+    border: 0;
+    position: absolute;
+    top: 15px;
+    right: 42px;
+  }
+  .sprite-seta{
+    position: absolute;
+    top: 23px;
+    right: 21px;
+  }
+  .feed{
+    line-height: 1.4
+  }
+  textarea{
+    height: 79px;
+    margin: 14px 0 !important;
+    padding: 10px;
+    max-width: 480px;
+    min-width: 480px;
+  }
+
+}
+.box-button{
+  span{
+    b{
+      .font(500; 11px);
+      display: block;
+      margin-top: -3px;
+    }
+  }
+}
+table .user-details.usr-table{
+
+  h3{
+    margin-left: 10px;
+    margin-top: 17px;
+  }
+  ul{
+    position: relative;
+    top: 21px;
+  }
+}
+.menu-trilha {
+    background-position: -1237px -238px;
+    height: 150px;
+    width: 192px;
+}
+
+.bgr-materias{
+  background-color: #0a4478 !important;
+}
+.border-materias{
+  border-left-color: #0a4478 !important
+}
+
+.bgr-total{
+  background-color: #1866ab !important;
+}
+.border-total{
+  border-left-color: #1866ab !important
+}
+
+.bgr-horas{
+  background-color: #0092ce !important;
+}
+.border-horas{
+  border-left-color: #0092ce !important
+}
+
+.bgr-teoria{
+  background-color: #769d00 !important;
+}
+.border-teoria{
+  border-left-color: #769d00 !important
+}
+
+.bgr-revisao{
+  background-color: #e5b700 !important;
+}
+.border-revisao{
+  border-left-color: #e5b700 !important
+}
+
+.bgr-questao{
+  background-color: #ff8400 !important;
+}
+.border-questao{
+  border-left-color: #ff8400 !important
+}
+.box-resumo .detail-left {
+    padding: 10px 76px 10px 23px;
+}
+.table-professor.background-white tr.topo th{
+  .font(500; 12px);
+  color: #1a678f !important
+}
+.box-resumo{
+  .bluetitle{
+    .font(500; 14px) !important;
+    color: #1a678f !important
+  }
+}
+.num_cento{
+  width: 80px;
+    height: 58px;
+    border-radius: 80px;
+    background-color: #fff;
+    position: absolute;
+    top: 13px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    z-index: 1001;
+    padding-top: 25px;
+    .font(500; 23px);
+    text-align: center;
+}
+.grafico-porcentagem{
+  width: 107px;
+  height: 107px;
+  border-radius: 110px;
+  background-color: #e1e1e1;
+  display: table;
+  position: relative;
+  overflow: hidden;
+}
+.cento_25{
+  width: 54px;
+  height: 54px;
+  position: absolute;
+  z-index: 1000;
+  background-color: #9acd00;
+  top: 0;
+  right: 0;
+  border-radius: 0px 71px 0px 10px;
+}
+.div-compartilhar{
+  span{
+    color: #0092ce;
+    .font(400; 12px);
+  }
+  ul.redes-sociais{
+    li a{
+      width: 25px;
+      height: 25px;
+      text-indent: -9999px;
+      margin-right: 5px;
+    }
+    li .sprite-facebook{
+      background-position: -1271px -193px;
+    }
+    li .sprite-twitter{
+      background-position: -1299px -193px;
+    }
+    li .sprite-in{
+      background-position: -1327px -193px;
+    }
+    li .sprite-google{
+      background-position: -1355px -193px;
+    }
+  }
+}
+.professor .avaliacao-alunos ul li a .avaliacao-nota{
+  width: 32px
+}
+
+.tituloDetalhesCurso{
+  .font(500; 24px) !important
+}
+.conteudoPapiro p{
+  .font(400; 15px)
+}
+.topoLinha1 div{
+  .font(500; 20px)
+}
+.visaoAluno2{
+  background-color: #f1f1f1 !important;
+  .publicacao{
+    position: relative;
+    top: 113px;
+    left: 254px;
+    .select-option select{
+      padding: 6px 8px !important;
+      background-position: -733px -446px !important;
+    }
+  }
+  .sprite-seta{
+    top: 563px;
+    left: 280px;
+  }
+}
+.esperandoMsg{
+  top: 96px;
+  color: #004570;
+  .font(500; 24px);
+}
+.assinar{
+  top: 150px !important;
+}
+.opcaoArquivo{
+  top: -121px !important;
+  .option-group{
+    width: 403px;
+    .payment-method{
+      max-width: 180px;
+      label{
+        margin-left: -1px;
+        width: 180px;
+        background-color: #f1f1f1;
+        span{
+          color: #1e9ec5;
+          .font(500; 20px);
+        }
+        i{
+          position: relative;
+          top: 5px;
+          margin-right: 3px;
+          margin-left: 0;
+        }
+
+      }
+
+    }
+  }
+}
+.aluno1{
+  width: 994px !important
+}
+.menuAulas a, .menuForum a{
+  .font(200; 24px) !important
+}
+.sprite6{
+  background-image: url('../img/spritesheet_6.png') !important;
+}
+.cursos-price{
+  position: relative;
+  top: -27px;
+  .btn{
+    .menu-name{
+      position: relative;
+      top: 4px;
+    }
+  }
+}
+.sprite6.sprite-pagina{
+
+    width: 25px;
+    height: 30px;
+    background-position: -429px -449px;
+    margin-right: 9px;
+
+}
+.foto{
+  .usuario.small {
+    width: 78px !important;
+    height: 78px;
+    border: 6px solid #1e9ec5;
+    float: left;
+    margin-right: 9px;
+    .usr-img {
+      width: 66px;
+      height: 66px;
+      left: 0px;
+      right: -27px;
+      top: 0px;
+    }
+  }
+}
+.detalheProfessorExpand{
+  .avaliacaoLista .item{
+    margin: 10px auto;
+  }
+  .avaliacaoLista .aceitacao{
+    margin: 10px 4px
+  }
+}
+.estatisticas-app{
+  ul.desafios li a{
+    padding: 22px 33px 22px 33px !important;
+    color: #1a678f;
+    border-right: 1px solid #fff;
+  }
+  #box-estatistica{
+    margin-top: 0;
+    padding: 20px;
+    .box-estatisticas{
+      position: relative;
+
+      margin-bottom: 5px;
+      .bluetitle{
+        text-align: left;
+        .font(400; 14px);
+      }
+      hr{
+        position: absolute;
+        border-color: #1f91cb;
+        border-bottom: 1px solid #1f91cb;
+        width: 400px;
+        top: 12px;
+        right: 31px;
+      }
+      .sprite-seta_blue{
+        position: absolute;
+        top: 5px;
+        right: 2px;
+      }
+      .detail-materia{
+        margin-bottom: 20px;
+        .detail-left, .detail-right{
+          .font(400; 14px)
+        }
+      }
+    }
+  }
+
+}
+
+#estatisticas-app_right{
+  padding-top: 20px;
+  .btn-questoes{
+    width: 195px !important;
+    line-height: 1.3;
+    .menu-name{
+      line-height: 1.3
+    }
+  }
+  .btn-ranking_concurseiros{
+    width: 195px;
+    padding: 7.7px 10px;
+    line-height: 1.3;
+    .menu-name{
+      line-height: 1.3
+    }
+  }
+  .box-infos{
+    width: 195px;
+    position: relative;
+    margin-bottom: 20px;
+    .btn{
+      .font(500; 17px);
+      line-height: 1.2
+    }
+    .container_circle{
+      width: 160px;
+      height: 160px;
+      background-color: #0a4478;
+      border-radius: 180px;
+      margin: 0 auto;
+      position: relative;
+      .dados_container{
+        width: 130px;
+        height: 130px;
+        background-color: #fff;
+        border-radius: 140px;
+        margin: 0 auto;
+        position: relative;
+        top: 15px;
+        text-align: center;
+        .dado{
+          font-size: 41px;
+          position: absolute;
+          top: 35px;
+          left: 0;
+          right: 0;
+          z-index: 1001;
+        }
+        .line-division{
+          display: block;
+          height: 1px;
+          background-color: #fff;
+          width: 100%;
+          z-index: 1000;
+          position: absolute;
+          top: 70px;
+          width: 160px;
+          left: -15px;
+        }
+      }
+      .arrow-down{
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-top: 17px solid #1e9ec5;
+        position: absolute;
+        bottom: -16px;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+      }
+    }
+
+  }
+}
+.bgr-green_acertos{
+  background-color: #7dc900 !important
+}
+.bgr-red_erros{
+  background-color: #d70604 !important
+}
+.bgr-blue_desempenho{
+  background-color: #42aece !important
+}
+.border-green_acertos{
+  border-left-color: #7dc900 !important
+}
+.border-red_erros{
+  border-left-color: #d70604 !important
+}
+.border-blue_desempenho{
+  border-left-color: #42aece !important
+}
+.deg180{
+  transform: rotate(180deg);
+}
+.expand-app{
+  li{
+    a{
+      .font(400; 14px) !important;
+      margin-right: 10px !important;
+      border-right-color: #1a678f !important;
+      color: #1a678f !important;
+      letter-spacing: 0 !important;
+    }
+  }
+}
+#wifi {
+  left: -275px;
+  top: 40px;
+  width: 347px;
+  &:after{
+    left: 82%;
+  }
+  p{
+    .font(500; 15px) !important;
+    color: #1a678f !important;
+    padding-top: 13px;
+  }
+  .intro-text{
+    padding: 20px;
+  }
+  ul li a .menu-name{
+    .font(500; 12px) !important;
+    color: #1a678f !important;
+  }
+}
+.box-expand {
+  > ul > li > a {
+    padding: 10px 20px;
+    .data-publicacao{
+      .font(400; 12px);
+      position: relative;
+      top: 1px;
+    }
+  }
+}
+#index{
+  .btn-facebook.sprite {
+    background-position: -652px -350px;
+    padding-left: 42px !important;
+  }
+  .btn-tour{
+    .font(400; 14px) !important;
+    color: #004570;
+    width: 225px;
+  }
+  .wlc-concurseiro{
+    margin-top: 40px;
+    h2{
+      margin-bottom: 5px;
+    }
+    p{
+      .font(300; 15px);
+      line-height: 1.1;
+      b{
+        .font(600; 15px);
+      }
+    }
+    .site-info{
+      ul{
+        position: relative;
+      }
+    }
+  }
+  .dotted-line{
+    width: 58px;
+    height: 1px;
+    border-bottom: 5px dotted #004570;
+    display: block;
+    position: absolute;
+    top: 27px;
+    left: 89px;
+  }
+  ul.menu-cadastro li a{
+    .font(400; 12px);
+    padding: 10px 18.2px;
+    min-height: 52px;
+  }
+  .professores a{
+    background-position: 29px -65px !important;
+  }
+  .anunciantes a{
+    background-position: 29px -154px !important;
+  }
+  .content-cadastro{
+    height: 445px;
+    padding-top: 22px;
+    .acesso-gratuito{
+      margin-bottom: 10px;
+      .font(300; 16px);
+      b{
+        font-size: 16px;
+      }
+    }
+    input[type="text"]{
+      padding: 12px 10px;
+    }
+    .option-group.sexo{
+      width: 130px;
+      position: relative;
+      top: 9px;
+    }
+    form .btn-cadastras{
+      padding: 15px 10px;
+      font-weight: 500;
+    }
+  }
+}
+#content-left{
+  .user-details {
+    .usr-name{
+      .font(500; 18px)
+    }
+    .usr-nivel{
+      .font(400; 14px)
+    }
+  }
+  .user-menu{
+    ul{
+      li{
+        a{
+          i{
+            position: relative;
+            top: 0;
+            &.sprite-favoritos{
+              top: 2px;
+            }
+            &.sprite-minha_rede{
+              top: 1px;
+            }
+            &.sprite-minha_rede{
+              top: 1px;
+            }
+            &.sprite-indicacoes{
+              top: 6px;
+            }
+            &.sprite-info_boatos{
+              top: 5px;
+            }
+            &.sprite-dicas{
+              top: 1px;
+            }
+            &.sprite-mapas{
+              top: 0px;
+            }
+            &.sprite-provas{
+              top: 2px;
+            }
+            &.sprite-editais{
+              top: 3px;
+            }
+            &.sprite-sucesso{
+              top: 5px;
+            }
+            &.sprite-motivacao{
+              top: 1px;
+            }
+            &.sprite-descontrair{
+              top: 2px;
+            }
+          }
+          .menu-name{
+            padding: 4px 0 0 35px !important;
+          }
+        }
+      }
+    }
+  }
+}
+#content-middle{
+  .anuncio{
+    h4{
+      font-weight: 500;
+      margin-bottom: 10px
+    }
+    p{
+      margin-bottom: 30px;
+      line-height: 1.3
+    }
+  }
+  ul.desafios li a{
+    padding: 22px 34px;
+  }
+  #ativos .btn.half{
+    width: 124px
+  }
+  .box-interesses{
+    .box-interesse{
+      .sprite-plus {
+          position: relative;
+          right: 40px;
+          top: 14px;
+      }
+    }
+  }
+  .box-msg{
+    .box-comment{
+      .sprite-image{
+        border: 0;
+        position: absolute;
+        top: 1px;
+        right: 26px;
+      }
+      .sprite-seta {
+          position: absolute;
+          top: 9px;
+          right: 5px;
+      }
+    }
+  }
+  .feed-details{
+    .user-details{
+      .user-stats{
+        margin-left: 40px;
+        padding-top: 17px;
+        .font(400; 20px);
+        b{
+          .font(500; 20px);
+          color: #1a678f;
+        }
+      }
+    }
+  }
+  .feed-text{
+    .text-nvl{
+      .font(500; 18px);
+      color: #696969;
+      margin-bottom: 20px;
+    }
+    .text-pub{
+      font-size: 18px;
+      b{
+        font-size: 24px;
+        color: #1a678f;
+      }
+    }
+    .text-pub-default{
+      font-size: 18px;
+      b{
+        color: #1a678f;
+        font-size: 18px;
+      }
+    }
+    .box-conq p{
+      color: #696969;
+      b{
+        color: #2c6ba4;
+      }
+    }
+  }
+}
+.data-publicacao-list{
+  left: 77px;
+  top: 35px;
+  .font(300; 12px);
+}
+.tipo-lista-feed{
+  .box-title{
+    i{
+      min-width: 52px;
+      min-height: 52px;
+    }
+  }
+  .title-publicacao{
+    margin-top: 3px !important;
+  }
+  .papo-title{
+
+  }
+}
+.artigo {
+  .usuario{
+    left: -7px
+  }
+  h3.usr-name{
+    left: -41px !important;
+  }
+  span.title-publicacao{
+    margin-left: 0 !important;
+    position: relative;
+    left: 12px;
+  }
+}
+.pub-papo.tipo-lista-feed{
+  .box-title{
+    .title-publicacao{
+      text-transform: none;
+      color: #ffea00;
+      .font(500; 14px);
+      margin-top: -3px !important;
+    }
+    .papo-title{
+      .font(400; 14px) !important;
+      top: 35px;
+    }
+  }
+}
+#published-avancado {
+  .sprite-close_blue {
+      top: -13px;
+  }
+  #passo2{
+    display: none;
+    .title-avancado{
+      width: 440px;
+    }
+    .botoes{
+      padding: 12px;
+      font-size: 11px;
+      color: #696969;
+      font-style: italic;
+      margin: 10px 0;
+      border: 1px solid #eaeaea;
+    }
+    .text-avancado{
+      min-width: 529px;
+      max-width: 529px;
+      min-height: 199px;
+      width: 519px;
+      height: 160px;
+      font-size: 12px;
+      color: #696969;
+      margin-bottom: 20px;
+    }
+    .alert-avancado{
+      .font(400; 18px);
+      line-height: 1.2;
+      font-style: italic;
+    }
+  }
+}
+.box-lista-professor{
+  position: relative;
+  &.expandido{
+    margin-top: 5px;
+    padding: 10px;
+    .info-numbers{
+      position: relative !important;
+      top: 0;
+      right: 0;
+      width: 100% !important;
+      margin-bottom: 10px
+    }
+    .avaliacao-alunos ul li a{
+      min-width: 90px;
+    }
+    .text-info{
+      h5{
+        .menu-name{
+          margin-left: 10px;
+          text-transform: none;
+          .font(500; 15px);
+          color: #1a678f;
+        }
+      }
+      p{
+        .font(300; 12px);
+        color: #1e9ec5;
+        line-height: 1.2;
+      }
+    }
+
+  }
+  .channel-info{
+    margin-bottom: 0 !important;
+    .usr-name{
+      text-align: left;
+      margin-left: 77px;
+      .font(500; 18px) !important;
+    }
+    .usr-nivel{
+      text-align: left;
+      margin-left: 77px;
+      margin-top: -2px;
+      font-size: 13px;
+    }
+    .attribuicoes{
+      position: relative;
+      left: 15px;
+      font-size: 14px;
+      top: -5px;
+      .menu-name{
+        .font(400; 12px) !important;
+      }
+    }
+  }
+  .pag-option{
+    background-color: transparent !important;
+    margin-bottom: 20px !important
+  }
+  .sprite-plus_gd, .sprite-minus_gd{
+    position: absolute !important;
+    left: 0 !important;
+    right: 0 !important;
+    margin: 0 auto;
+    bottom: -15px !important;
+    top: initial !important;
+    z-index: 10;
+  }
+}
+.box-desafio{
+  margin: 0 30px;
+  &.half{
+    width: 255px;
+  }
+  .box-seguidor{
+    margin: 20px 0 !important;
+    width: 100%;
+    .feed-details{
+      .user-details{
+        .usuario{
+          position: absolute;
+          top: -4px;
+          left: 4px;
+        }
+        h3.usr-name{
+          margin-left: 85px !important;
+        }
+        ul{
+          margin: 5px 0 0 80px !important;
+          width: inherit !important;
+        }
+      }
+      .list-seguidores{
+        margin: 10px 0 2px 0 !important
+      }
+      .btn{
+        padding: 2px 13px;
+        .font(500; 10px);
+        position: absolute;
+        min-width: 80px;
+        margin-right: 0 !important;
+        right: 33px;
+        &.btn-aceitar{
+          bottom: 96px;
+          background-color: #95b75d;
+        }
+        &.btn-ignorar{
+          bottom: 72px;
+          background-color: #c41313;
+        }
+      }
+    }
+    .remove{
+      .font(500; 11px);
+      color: #c41313;
+      display: block;
+      float: left;
+      margin-top: 3px;
+    }
+  }
+}
+.minha-rede{
+  margin: 14px 0;
+  position: relative;
+  width: 85%;
+  text-align: center;
+  input{
+    width: 180px;
+    margin: 0 auto !important;
+    border: 1px solid #ccc;
+  }
+  .sprite-lupa{
+    width: 27px;
+    height: 27px;
+    background-position: -232px -279px;
+    position: absolute;
+    top: 6px;
+    left: 309px;
+    filter: saturate(4) grayscale(1);
+  }
+  .btn{
+    position: absolute;
+    top: 1px;
+    right: 32px;
+    font-size: 12px;
+    padding: 7px 10px;
+  }
+}
+.desafios.rede{
+  li{
+    a{
+
+      padding: 13px 34px 30px 80.5px !important;
+      position: relative;
+      .font(500; 11px);
+      .usr-info{
+        position: absolute;
+        font-size: 11px;
+        left: 45px;
+        right: 0;
+        margin: 0 auto;
+        min-width: 37px;
+        display: block;
+        max-width: 37px;
+        color: #1e9ec5;
+      }
+      .usr-info-ballon{
+        position: absolute;
+        font-size: 11px;
+        right: 10px;
+        top: 21px;
+        padding: 2px 4px;
+        background-color: #1e9ec5;
+        border-radius: 28px;
+        color: #fff;
+        width: 14px;
+      }
+      &.active{
+        color: #1e9ec5
+      }
+      &.desativado{
+        i{
+          filter: grayscale(1);
+        }
+      }
+      i{
+        position: absolute;
+        left: 20px;
+        &.sprite-btn_solicitacoes{
+          top:12px
+        }
+      }
+    }
+  }
+}
+.anuncio{
+  h4{
+    color: #1a678f !important
+  }
+  .name-anunciantes, .site-anunciante{
+    color: #1e9ec5 !important
+  }
+  .text-anunciantes{
+    color: #696969 !important
+  }
+}
+.novo-curso{
+  .box-title{
+    margin-top: -1px !important;
+    .title-publicacao{
+      margin-top: 8px !important;
+      margin-left: 10px !important;
+    }
+  }
+}
+.btn-cursos{
+  background-color: #74bb00 !important
+}
+.mapa-concursos{
+  .box-area{
+    p{
+      color: #4ca92b;
+      text-transform: uppercase;
+      .font(500; 17px);
+      b{
+        .font(500; 22px);
+        line-height: 1.1;
+      }
+      &.p-div{
+        .span-div{
+          margin-right: 36px;
+          min-width: 179px;
+          &.download-edital{
+            min-width: 100px !important
+          }
+        }
+        .span-title{
+          .font(500; 16px) !important;
+        }
+        .span-desc{
+          text-transform: none !important;
+          line-height: 1.1;
+          display: block;
+          .font(400; 15px) !important;
+        }
+
+      }
+    }
+    .btn{
+      .font(500; 22px;);
+    }
+
+  }
+  .btn-cursos_disp{
+    .font(500; 16px )!important ;
+  }
+  .box-concurso{
+    &.area-conc{
+      padding: 16px 10px !important;
+      margin-bottom: 35px !important;
+      .num-concursos{
+        b{
+          margin-top: 10px;
+        }
+        span{
+          margin-top: -7px !important
+        }
+      }
+    }
+    &.box-concurso2{
+      padding: 6.5px 10px !important;
+      h6{
+        padding-top: 15px;
+        .font(500; 16px) !important;
+      }
+    }
+  }
+}
+.no-margin-top{
+  margin-top: 0 !important
+}
+.no-margin-bottom{
+  margin-bottom: 0 !important
+}
+.div-interesses{
+  .box-interesse{
+    margin: 10px 0 !important;
+    .title-interesse{
+      .font(500; 14px) !important;
+    }
+    p{
+      .font(400; 13px) !important;
+      color: #696969 !important;
+    }
+    .text-interesse{
+      color: #696969 !important;
+    }
+  }
+}
+.input-editais{
+  .input-edital{
+    width: 157px;
+  }
+  .caracteres{
+    bottom: -9px;
+    position: absolute;
+    right: 122px;
+    color: #696969;
+  }
+}
+.medalhas{
+  .menu-alert{
+    padding: 3px 9px 13px 9px !important;
+    top: -6px;
+  }
+}
+#user-view{
+  .usr-name{
+    .font(500; 24px) !important;
+    margin-left: 163px !important;
+  }
+  .user-details{
+    ul{
+      margin-left: 160px !important;
+    }
+  }
+}
+.pub-papo{
+  border: 3px solid #1e9ec5;
+  .box-top{
+    .box-title{
+      .title-publicacao{
+        .font(500; 18px) !important;
+        margin-top: 7px;
+      }
+    }
+  }
+}
+.e-book{
+  #e-books{
+    .book{
+      li{
+        a{
+          i{
+            position: absolute;
+            &.sprite-tutorial{
+              left: 13px;
+            }
+          }
+          .book-desc{
+            left: 44px;
+          }
+        }
+      }
+    }
+  }
+}
+.publish-options{
+  .sprite-plus_pq{
+    margin-top: 7px;
+  }
+}
+.name-perfil{
+  .font(500; 18px);
+  color: #1a678f;
+  text-transform: uppercase;
+}
+
+.content-right-fixed{
+  position: fixed;
+  top: -434px;
+}
+.meus-cursos-avaliacoes{
+  ul{
+    li {
+      a{
+        width: 128px !important;
+        margin-right: 14px !important;
+        .avaliacao-nota{
+          width: 104px !important;
+          text-align: center !important;
+          padding: 23px 12px !important;
+          span{
+            margin: 0 auto !important;
+            display: block !important;
+            .font(500; 30px) !important;
+            margin-top: -10px !important;
+          }
+        }
+
+      }
+    }
+  }
+}
+.grid_100{
+  .img-topo{
+    border-bottom: 4px solid #1e9ec5;
+  }
+}
+.img-topo{
+  &:hover{
+    .sprite-cam_icon_gd{
+      display: block;
+    }
+  }
+}
+.detalhes-curso{
+  .feed-text{
+    .curso-desc{
+      margin-top: 20px;
+      .box-cursos{
+        .nome-option{
+          .curso-title{
+            color: #1a678f;
+            .font(500; 15px);
+          }
+        }
+        .details{
+          span{
+            color: #1a678f
+          }
+        }
+      }
+    }
+  }
+}
+.overlay{
+  .bigtitle{
+    .font(500; 14px) !important;
+  }
+}
+.meus-eventos{
+  .box-input input[type="text"]{
+    text-align: center;
+  }
+}
+.arq_add{
+  position: relative;
+  top: -12px;
+  left: 22px;
+  .sprite-close_gray{
+    position: relative;
+top: 18px;
+left: 10px;
+  }
+}
+.porcentagem{
+  width: 174px;
+  position: absolute;
+  right: -269px;
+  top: 75px;
+  .qtd_per{
+    position: absolute;
+    .font(400; 11px) !important;
+    color: #b3b3b3;
+    top: 3px;
+right: -28px;
+  }
+}
+.financeiro input{
+  padding: 12px 10px;
+  text-align: center;
+}
+.no-padding-top{
+  padding-top: 0 !important
+}
+.margin-bottom-pq{
+  margin-bottom: 10px;
+}
+.barra-porcentagem{
+  position: absolute;
+top: -5px;
+right: -37px;
+color: #696969;
+}
+.prova{
+  position: relative;
+  .prova-name{
+    position: absolute;
+    top: 28px;
+    left: 58px;
+    right: 0;
+    margin: 0 auto;
+    color: #1e9ec5;
+    .font(500; 15px);
+  }
+  .sprite-pdf{
+    padding-left: 22px !important;
+  }
+}
+.desafios-page{
+  .box-desafio{
+    margin: 10px 8px !important;
+    &.half{
+      width: 269px !important;
+    }
+    .btn{
+      .menu-name{
+        .font(500; 14px) !important;
+      }
+      &:hover{
+        opacity: 1;
+      }
+    }
+  }
+}
+.professor{
+  #expand-list.green{
+    li{
+      a{
+        color: #10a900 !important;
+        &:after{
+          border-color: #10a900 !important;
+        }
+      }
+    }
+  }
+}
+.interacao{
+  top: 52px !important;
+  &:after{
+    left: 55% !important;
+  }
+}
+.content-left-fixed{
+  position: fixed;
+  width: 252px;
+  top: 53px;
+}
+@top40 : 40px;
+.div-professores1{
+  .relative;
+  top: @top40;
+}
+.div-anunciantes1{
+  .relative;
+  top: @top40;
+}
+.form-professores{
+  .relative;
+  top: @top40;
+}
+.form-anunciantes{
+  .relative;
+  top: @top40;
+}
+#papo-concurseiro{
+  #content-left{
+    min-height: 1px;
+  }
+  .content-right-fixed{
+    position: fixed;
+    top: 71px;
+  }
+  .content-left-fixed{
+    position: fixed;
+    top: -237px;
+    width: 371px;
+  }
+}
+.home-concurseiro{
+  .box-feed{
+    .box-approve{
+      .box-button{
+        .menu-name{
+          position: relative;
+          top: 4px;
+        }
+      }
+    }
+  }
+}
+.lupa-concurseiro{
+  background-position: -86px -275px !important;
+  width: 160px;
+}
+.tour-visitante{
+  padding: 7px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  p{
+    text-align: center;
+    color: #868686
+  }
+  a{
+    b{
+      color: #004570
+    }
+  }
+}
+.blur{
+  -webkit-filter: blur(4px);
+  filter: blur(4px);
+}
+#content-right{
+    .box-direita{
+        &#ead{
+            margin-bottom: 46px;
+        }
+        &#concurso{
+            p{
+                margin-bottom: 10px;
+            }
+            margin-bottom: 46px;
+        }
+        &#papo{
+            margin-bottom: 46px;
+        }
+    }
+}
